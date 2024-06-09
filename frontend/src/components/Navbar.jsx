@@ -43,7 +43,7 @@ export default function Navbar() {
                             <li><a>Projects</a></li>
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl">Sigma</a>
+                    <a className="btn btn-ghost text-blue text-xl">Sigma</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -61,7 +61,7 @@ export default function Navbar() {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn">Login</a>
+                    <a className="btn bg-blue text-white rounded-full">Login</a>
                 </div>
             </div>
         </header>

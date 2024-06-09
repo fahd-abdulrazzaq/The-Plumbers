@@ -5,7 +5,7 @@ export default function Footer() {
         <div>
             <footer className="footer xl:px-24 py-10 px-4 text-base-content">
                 <aside>
-                    <a href='/' className='text-green font-bold text-3xl'>Sigma</a>
+                    <a href='/' className='text-blue font-bold text-3xl'>Sigma</a>
                     <p className="my-3 md:w-40">
                         Learn Anything, Anytime, Anywhere.
                     </p>
