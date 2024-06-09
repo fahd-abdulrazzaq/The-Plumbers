@@ -15,3 +15,11 @@ header {
 .section-container{
     @apply max-w-screen-2xl container mx-auto xl:px-24 px-4;
 }
+
+.title {
+    @apply text-4xl md:text-5xl font-bold my-2 leading-snug md:leading-snug
+}
+
+.subtitle {
+    @apply text-blue uppercase tracking-wide font-medium text-lg
+}
