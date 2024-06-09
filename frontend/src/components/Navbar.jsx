@@ -52,8 +52,8 @@ export default function Navbar() {
                             <details>
                                 <summary>Menu</summary>
                                 <ul className="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
+                                    <li><a>Menu1</a></li>
+                                    <li><a>Menu2</a></li>
                                 </ul>
                             </details>
                         </li>
