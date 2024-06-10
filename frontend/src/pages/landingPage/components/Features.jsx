@@ -2,10 +2,10 @@ import React from 'react'
 
 export default function Features() {
     const serviceLists = [
-        { id: 1, title: "Personalized Learning", des: "Seasoned materials and resources tailored to your need", img: "/images/home/services/icon1.png" },
-        { id: 2, title: "Expert Tutors", des: "Learn from experts", img: "/images/home/services/icon2.png" },
-        { id: 3, title: "Interactive Courses", des: "Get access to our engaging materials", img: "/images/home/services/icon3.png" },
-        { id: 4, title: "Test and Feedbacks", des: "Partake in test and get results with corrections to errors", img: "/images/home/services/icon4.png" },
+        { id: 1, title: "Personalized Learning", des: "Seasoned materials and resources tailored to your need"},
+        { id: 2, title: "Expert Tutors", des: "Learn from experts"},
+        { id: 3, title: "Interactive Courses", des: "Get access to our engaging materials"},
+        { id: 4, title: "Test and Feedbacks", des: "Partake in test and get results with corrections to errors"},
     ]
 
     return (
