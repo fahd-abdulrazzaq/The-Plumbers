@@ -24,7 +24,7 @@ export default function Procedure() {
                             howItWorks.map((step) => [
                                 <div key={step.id}
                                     className="shadow-md rounded-sm py-5 px-4 text-center space-y-2 bg-primary
-                        cursor-pointer hover:border hover:border-green transition-all duration-200"
+                        cursor-pointer hover:border hover:border-blue transition-all duration-200"
                                 >
                                     <h5 className='pt-3 font-semibold text-xlg text-blue'>{step.title}</h5>
                                     <p className=''>{step.description}</p>
