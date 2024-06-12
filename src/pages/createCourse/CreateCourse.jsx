@@ -133,10 +133,10 @@ const CreateCourse = () => {
                                             </label>
                                         </div>
                                     ))}
-                                    <button type="button" onClick={() => handleAddLesson(moduleIndex)} className="mt-2 text-blue-500">+ Add Another Lesson</button>
+                                    <button type="button" onClick={() => handleAddLesson(moduleIndex)} className="mt-2 border border-2 border-blue p-2 text-blue rounded-md">+ Add Another Lesson</button>
                                 </div>
                             ))}
-                            <button type="button" onClick={handleAddModule} className="mt-2 text-blue-500">+ Add Another Module</button>
+                            <button type="button" onClick={handleAddModule} className="mt-2 border border-2 border-blue p-2 text-blue rounded-md">+ Add Another Module</button>
                         </section>
 
                         {/* Assessment and Certification Section */}
@@ -199,7 +199,7 @@ const CreateCourse = () => {
                                                         const newQuizzes = quizzes.slice();
                                                         newQuizzes[quizIndex].questions[questionIndex].options.push('');
                                                         setQuizzes(newQuizzes);
-                                                    }} className="text-blue-500 mt-2">+ Add Option</button>
+                                                    }} className="border border-2 border-blue p-2 text-blue rounded-md mt-2">+ Add Option</button>
                                                 </>
                                             )}
                                             <label className="block">
@@ -212,10 +212,10 @@ const CreateCourse = () => {
                                             </label>
                                         </div>
                                     ))}
-                                    <button type="button" onClick={() => handleAddQuestion(quizIndex)} className="text-blue-500 mt-2">+ Add Another Question</button>
+                                    <button type="button" onClick={() => handleAddQuestion(quizIndex)} className="border border-2 border-blue p-2 text-blue rounded-md mt-2">+ Add Another Question</button>
                                 </div>
                             ))}
-                            <button type="button" onClick={handleAddQuiz} className="mt-2 border-lg border-blue text-blue-500">+ Add Another Quiz</button>
+                            <button type="button" onClick={handleAddQuiz} className="mt-2 border border-2 border-blue p-2 text-blue rounded-md">+ Add Another Quiz</button>
                         </section>
 
                         {/* Submit and Review Section */}
