@@ -39,12 +39,7 @@ const CreateCourse = () => {
             difficultyLevel,
             thumbnailImage,
             modules,
-            quizzes,
-            certificationEnabled,
-            certificateTemplate,
-            supplementaryMaterials,
-            discussionForumEnabled,
-            plagiarismCheckEnabled
+            quizzes
         };
         console.log('Course Data Submitted: ', courseData);
     };
