@@ -41,6 +41,15 @@ const CreateCourse = () => {
             modules,
             quizzes
         };
+
+        setCourseTitle('')
+        setCourseDescription('')
+        setCategory('')
+        setDifficultyLevel('')
+        setModules([{ title: '', description: '', lessons: [{ title: '', content: '' }] }])
+        setQuizzes([{ title: '', description: '', questions: [{ text: '', type: 'Multiple Choice', options: ['', '', '', ''], correctAnswer: '' }] }])
+        setThumbnailImage(null)
+
         console.log('Course Data Submitted: ', courseData);
     };
 
@@ -216,7 +225,7 @@ const CreateCourse = () => {
                         {/* Submit and Review Section */}
                         <section className="flex flex-col gap-4 md:flex-row justify-between p-4">
                             <button type="submit"
-                                 onClick={handleSubmit} className="bg-blue text-white px-4 py-2 rounded hover:bg-green-700">Submit</button>
+                                 onClick={handleSubmit} className="bg-blue text-white px-4 py-2 rounded">Submit</button>
                             <button type="button" onClick={() => console.log('Save as Draft')} className="bg-gray-300 text-gray-800 px-4 py-2 rounded hover:bg-gray-500">Save as Draft</button>
                         </section>
                     </form>
