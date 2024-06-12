@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import LandingPage from "../pages/landingPage/LandingPage";
+import CreateCourse from "../pages/createCourse/CreateCourse";
 
 const router = createBrowserRouter([
   {
@@ -11,6 +12,10 @@ const router = createBrowserRouter([
         path: "/",
         element: <LandingPage />,
       },
+      {
+        path: "/create-course",
+        element: <CreateCourse />
+      }
     ],
   },
 ]);
