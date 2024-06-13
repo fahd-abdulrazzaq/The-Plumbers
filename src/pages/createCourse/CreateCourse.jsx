@@ -228,7 +228,7 @@ const CreateCourse = () => {
                           required
                         />
                       </label>
-                      <label className='block' style={{ height: '350px' }}>
+                      <label className='block' >
                         Lesson Content
                         <ReactQuill
                           value={lesson.content}
@@ -239,7 +239,7 @@ const CreateCourse = () => {
                             ].content = e.target.value;
                             setModules(newModules);
                           }}
-                          className='mt-1 block w-full p-2 border h-100 rounded'
+                          className='mt-1 block w-full p-2 border rounded'
                           required
                         />
                       </label>
