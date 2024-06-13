@@ -54,8 +54,8 @@ const SignUp = () => {
               />
             </div>
 
-            <div className='bg-white text-center mt-10 rounded-md p-2 text-blue text-lg'>
-              <button>Sign up</button>
+            <div className='bg-white text-center mt-10 rounded-md p-2 text-blue text-lg hover:bg-slate-950 hover:text-white hover:transition hover:duration-200'>
+              <button>Sign Up</button>
             </div>
           </form>
 
