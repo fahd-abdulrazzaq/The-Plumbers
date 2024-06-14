@@ -6,7 +6,11 @@ import CreateCourse from '../pages/createCourse/CreateCourse';
 import Login from '../components/Login';
 import SignUp from '../components/SignUp';
 import CourseList from '../pages/courseList/CoursesList';
+<<<<<<< HEAD
 import UserProfile from '../components/UserProfile';
+=======
+import CoursePage from '../pages/course/CoursePage';
+>>>>>>> refs/remotes/origin/dev
 
 const router = createBrowserRouter([
   {
@@ -31,12 +35,21 @@ const router = createBrowserRouter([
       },
       {
         path: '/courses',
+<<<<<<< HEAD
         element: <CourseList />,
       },
       {
         path: '/profileUpdate',
         element: <UserProfile />,
       },
+=======
+        element: <CourseList />
+      },
+      {
+        path: '/course',
+        element: <CoursePage />
+      }
+>>>>>>> refs/remotes/origin/dev
     ],
   },
 ]);
