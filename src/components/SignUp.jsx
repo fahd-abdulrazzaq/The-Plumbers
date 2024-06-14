@@ -1,15 +1,35 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useContext, useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import app from '../auth/auth';
+import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
+import { UserContex } from './UserContex';
 
 const SignUp = () => {
-  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [user, setUser] = useState(null);
+  const navigate = useNavigate();
+  const { setUser } = useContext(UserContex);
 
   // login functionality
   const handleSignUp = async (e) => {
     e.preventDefault();
+
+    const auth = getAuth(app);
+    try {
+      const { user } = await createUserWithEmailAndPassword(
+        auth,
+        email,
+        password
+      );
+
+      setUser(user);
+      navigate('/profileUpdate');
+
+      setEmail('');
+      setPassword('');
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (

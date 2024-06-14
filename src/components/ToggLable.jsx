@@ -1,7 +1,10 @@
 import React, { useState, forwardRef, useImperativeHandle } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const ToggLable = forwardRef(({ buttonLabel, children }, refs) => {
   const [visible, setVisible] = useState(false);
+
+  const navigate = useNavigate();
 
   const hideWhenVisible = { display: visible ? 'none' : '' };
   const showWhenVisible = { display: visible ? '' : 'none' };

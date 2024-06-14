@@ -1,10 +1,12 @@
 /* eslint-disable no-undef */
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { IoMdLogIn } from "react-icons/io";
+import { IoMdLogIn } from 'react-icons/io';
+import { UserContex } from './UserContex';
 
 export default function Navbar() {
   const [sticky, setSticky] = useState(false);
+  const { user } = useContext(UserContex);
 
   // handle scroll function
   useEffect(() => {
@@ -74,7 +76,9 @@ export default function Navbar() {
               </li>
             </ul>
           </div>
-          <a href='/' className='btn btn-ghost text-blue text-xl'>Sigma</a>
+          <a href='/' className='btn btn-ghost text-blue text-xl'>
+            Sigma
+          </a>
         </div>
         <div className='navbar-center hidden lg:flex'>
           <ul className='menu menu-horizontal px-1'>
@@ -101,9 +105,21 @@ export default function Navbar() {
         </div>
         <div className='navbar-end'>
           {/* <a className='btn bg-blue text-white rounded-full'>Login</a> */}
-          <NavLink to='/login' className='flex justifyContent-between btn bg-blue text-white rounded-full'>
-          <IoMdLogIn /> Login
-          </NavLink>
+          {user ? (
+            <NavLink
+              to='/login'
+              className='flex justifyContent-between btn bg-blue text-white rounded-full'
+            >
+              <IoMdLogIn /> Logout
+            </NavLink>
+          ) : (
+            <NavLink
+              to='/login'
+              className='flex justifyContent-between btn bg-blue text-white rounded-full'
+            >
+              <IoMdLogIn /> Login
+            </NavLink>
+          )}
         </div>
       </div>
     </header>
