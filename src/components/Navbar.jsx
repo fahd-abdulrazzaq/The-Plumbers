@@ -1,6 +1,7 @@
 /* eslint-disable no-undef */
 import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import { IoMdLogIn } from "react-icons/io";
 
 export default function Navbar() {
   const [sticky, setSticky] = useState(false);
@@ -100,8 +101,8 @@ export default function Navbar() {
         </div>
         <div className='navbar-end'>
           {/* <a className='btn bg-blue text-white rounded-full'>Login</a> */}
-          <NavLink to='/login' className='btn bg-blue text-white rounded-full'>
-            Login
+          <NavLink to='/login' className='flex justifyContent-between btn bg-blue text-white rounded-full'>
+          <IoMdLogIn /> Login
           </NavLink>
         </div>
       </div>
