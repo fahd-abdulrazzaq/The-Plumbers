@@ -5,6 +5,7 @@ import CreateCourse from '../pages/createCourse/CreateCourse';
 import Login from '../components/Login';
 import SignUp from '../components/SignUp';
 import CourseList from '../pages/courseList/CoursesList';
+import CoursePage from '../pages/course/CoursePage';
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: '/courses',
         element: <CourseList />
+      },
+      {
+        path: '/course',
+        element: <CoursePage />
       }
     ],
   },
