@@ -1,1 +1,1 @@
-### SIGMA EDUTE
+### SIGMA EDUTEC
