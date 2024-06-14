@@ -1,6 +1,7 @@
 /* eslint-disable no-undef */
 import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import { IoMdLogIn } from "react-icons/io";
 
 export default function Navbar() {
   const [sticky, setSticky] = useState(false);
@@ -55,7 +56,7 @@ export default function Navbar() {
               className='menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52'
             >
               <li>
-                <a>Courses</a>
+                <a href='/courses'>Courses</a>
               </li>
               <li>
                 <a>Menu</a>
@@ -73,12 +74,12 @@ export default function Navbar() {
               </li>
             </ul>
           </div>
-          <a className='btn btn-ghost text-blue text-xl'>Sigma</a>
+          <a href='/' className='btn btn-ghost text-blue text-xl'>Sigma</a>
         </div>
         <div className='navbar-center hidden lg:flex'>
           <ul className='menu menu-horizontal px-1'>
             <li>
-              <a>Courses</a>
+              <a href='/courses'>Courses</a>
             </li>
             <li>
               <details>
@@ -100,8 +101,8 @@ export default function Navbar() {
         </div>
         <div className='navbar-end'>
           {/* <a className='btn bg-blue text-white rounded-full'>Login</a> */}
-          <NavLink to='/login' className='btn bg-blue text-white rounded-full'>
-            Login
+          <NavLink to='/login' className='flex justifyContent-between btn bg-blue text-white rounded-full'>
+          <IoMdLogIn /> Login
           </NavLink>
         </div>
       </div>

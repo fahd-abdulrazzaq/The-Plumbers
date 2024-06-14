@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import ReactQuill from 'react-quill';
+import 'react-quill/dist/quill.snow.css';
 
 const CreateCourse = () => {
   const [courseTitle, setCourseTitle] = useState('');
@@ -226,9 +228,9 @@ const CreateCourse = () => {
                           required
                         />
                       </label>
-                      <label className='block'>
+                      <label className='block' >
                         Lesson Content
-                        <textarea
+                        <ReactQuill
                           value={lesson.content}
                           onChange={(e) => {
                             const newModules = modules.slice();
@@ -239,7 +241,7 @@ const CreateCourse = () => {
                           }}
                           className='mt-1 block w-full p-2 border rounded'
                           required
-                        ></textarea>
+                        />
                       </label>
                     </div>
                   ))}
