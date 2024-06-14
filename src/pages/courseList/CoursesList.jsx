@@ -7,7 +7,7 @@ const courses = [
     description: "Learn the basics of programming.",
     category: "Programming",
     difficulty: "Beginner",
-    thumbnail: "link_to_image"
+    thumbnail: "https://media.istockphoto.com/id/1290864946/photo/e-learning-education-concept-learning-online.jpg?s=612x612&w=0&k=20&c=y1fQ-3wbsvdDaMn-cuHPibcgozOxKQS99mIgz6DFcVA="
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const courses = [
     description: "Dive deep into data analysis.",
     category: "Data Science",
     difficulty: "Advanced",
-    thumbnail: "link_to_image"
+    thumbnail: "https://media.istockphoto.com/id/1290864946/photo/e-learning-education-concept-learning-online.jpg?s=612x612&w=0&k=20&c=y1fQ-3wbsvdDaMn-cuHPibcgozOxKQS99mIgz6DFcVA="
   },
   {
     id: 1,
@@ -23,7 +23,7 @@ const courses = [
     description: "Learn the basics of programming.",
     category: "Programming",
     difficulty: "Beginner",
-    thumbnail: "link_to_image"
+    thumbnail: "https://media.istockphoto.com/id/1290864946/photo/e-learning-education-concept-learning-online.jpg?s=612x612&w=0&k=20&c=y1fQ-3wbsvdDaMn-cuHPibcgozOxKQS99mIgz6DFcVA="
   },
   {
     id: 2,
@@ -31,7 +31,7 @@ const courses = [
     description: "Dive deep into data analysis.",
     category: "Data Science",
     difficulty: "Advanced",
-    thumbnail: "link_to_image"
+    thumbnail: "https://media.istockphoto.com/id/1290864946/photo/e-learning-education-concept-learning-online.jpg?s=612x612&w=0&k=20&c=y1fQ-3wbsvdDaMn-cuHPibcgozOxKQS99mIgz6DFcVA="
   },
   {
     id: 1,
@@ -39,7 +39,7 @@ const courses = [
     description: "Learn the basics of programming.",
     category: "Programming",
     difficulty: "Beginner",
-    thumbnail: "link_to_image"
+    thumbnail: "https://media.istockphoto.com/id/1290864946/photo/e-learning-education-concept-learning-online.jpg?s=612x612&w=0&k=20&c=y1fQ-3wbsvdDaMn-cuHPibcgozOxKQS99mIgz6DFcVA="
   },
   {
     id: 2,
@@ -47,7 +47,7 @@ const courses = [
     description: "Dive deep into data analysis.",
     category: "Data Science",
     difficulty: "Advanced",
-    thumbnail: "link_to_image"
+    thumbnail: "https://media.istockphoto.com/id/1290864946/photo/e-learning-education-concept-learning-online.jpg?s=612x612&w=0&k=20&c=y1fQ-3wbsvdDaMn-cuHPibcgozOxKQS99mIgz6DFcVA="
   },
   {
     id: 1,
@@ -55,7 +55,7 @@ const courses = [
     description: "Learn the basics of programming.",
     category: "Programming",
     difficulty: "Beginner",
-    thumbnail: "link_to_image"
+    thumbnail: "https://media.istockphoto.com/id/1290864946/photo/e-learning-education-concept-learning-online.jpg?s=612x612&w=0&k=20&c=y1fQ-3wbsvdDaMn-cuHPibcgozOxKQS99mIgz6DFcVA="
   },
   {
     id: 2,
@@ -63,7 +63,7 @@ const courses = [
     description: "Dive deep into data analysis.",
     category: "Data Science",
     difficulty: "Advanced",
-    thumbnail: "link_to_image"
+    thumbnail: "https://media.istockphoto.com/id/1290864946/photo/e-learning-education-concept-learning-online.jpg?s=612x612&w=0&k=20&c=y1fQ-3wbsvdDaMn-cuHPibcgozOxKQS99mIgz6DFcVA="
   },
   {
     id: 1,
@@ -71,7 +71,7 @@ const courses = [
     description: "Learn the basics of programming.",
     category: "Programming",
     difficulty: "Beginner",
-    thumbnail: "link_to_image"
+    thumbnail: "https://media.istockphoto.com/id/1290864946/photo/e-learning-education-concept-learning-online.jpg?s=612x612&w=0&k=20&c=y1fQ-3wbsvdDaMn-cuHPibcgozOxKQS99mIgz6DFcVA="
   },
   {
     id: 2,
@@ -79,7 +79,7 @@ const courses = [
     description: "Dive deep into data analysis.",
     category: "Data Science",
     difficulty: "Advanced",
-    thumbnail: "link_to_image"
+    thumbnail: "https://media.istockphoto.com/id/1290864946/photo/e-learning-education-concept-learning-online.jpg?s=612x612&w=0&k=20&c=y1fQ-3wbsvdDaMn-cuHPibcgozOxKQS99mIgz6DFcVA="
   },
   {
     id: 1,
@@ -87,7 +87,7 @@ const courses = [
     description: "Learn the basics of programming.",
     category: "Programming",
     difficulty: "Beginner",
-    thumbnail: "link_to_image"
+    thumbnail: "https://media.istockphoto.com/id/1290864946/photo/e-learning-education-concept-learning-online.jpg?s=612x612&w=0&k=20&c=y1fQ-3wbsvdDaMn-cuHPibcgozOxKQS99mIgz6DFcVA="
   },
   {
     id: 2,
@@ -95,7 +95,7 @@ const courses = [
     description: "Dive deep into data analysis.",
     category: "Data Science",
     difficulty: "Advanced",
-    thumbnail: "link_to_image"
+    thumbnail: "https://media.istockphoto.com/id/1290864946/photo/e-learning-education-concept-learning-online.jpg?s=612x612&w=0&k=20&c=y1fQ-3wbsvdDaMn-cuHPibcgozOxKQS99mIgz6DFcVA="
   },
   {
     id: 1,
@@ -103,7 +103,7 @@ const courses = [
     description: "Learn the basics of programming.",
     category: "Programming",
     difficulty: "Beginner",
-    thumbnail: "link_to_image"
+    thumbnail: "https://media.istockphoto.com/id/1290864946/photo/e-learning-education-concept-learning-online.jpg?s=612x612&w=0&k=20&c=y1fQ-3wbsvdDaMn-cuHPibcgozOxKQS99mIgz6DFcVA="
   },
   {
     id: 2,
@@ -111,7 +111,7 @@ const courses = [
     description: "Dive deep into data analysis.",
     category: "Data Science",
     difficulty: "Advanced",
-    thumbnail: "link_to_image"
+    thumbnail: "https://media.istockphoto.com/id/1290864946/photo/e-learning-education-concept-learning-online.jpg?s=612x612&w=0&k=20&c=y1fQ-3wbsvdDaMn-cuHPibcgozOxKQS99mIgz6DFcVA="
   },
   {
     id: 1,
@@ -119,7 +119,7 @@ const courses = [
     description: "Learn the basics of programming.",
     category: "Programming",
     difficulty: "Beginner",
-    thumbnail: "link_to_image"
+    thumbnail: "https://media.istockphoto.com/id/1290864946/photo/e-learning-education-concept-learning-online.jpg?s=612x612&w=0&k=20&c=y1fQ-3wbsvdDaMn-cuHPibcgozOxKQS99mIgz6DFcVA="
   },
   {
     id: 2,
@@ -127,7 +127,39 @@ const courses = [
     description: "Dive deep into data analysis.",
     category: "Data Science",
     difficulty: "Advanced",
-    thumbnail: "link_to_image"
+    thumbnail: "https://media.istockphoto.com/id/1290864946/photo/e-learning-education-concept-learning-online.jpg?s=612x612&w=0&k=20&c=y1fQ-3wbsvdDaMn-cuHPibcgozOxKQS99mIgz6DFcVA="
+  },
+  {
+    id: 1,
+    title: "Introduction to Programming",
+    description: "Learn the basics of programming.",
+    category: "Programming",
+    difficulty: "Beginner",
+    thumbnail: "https://media.istockphoto.com/id/1290864946/photo/e-learning-education-concept-learning-online.jpg?s=612x612&w=0&k=20&c=y1fQ-3wbsvdDaMn-cuHPibcgozOxKQS99mIgz6DFcVA="
+  },
+  {
+    id: 2,
+    title: "Advanced Data Science",
+    description: "Dive deep into data analysis.",
+    category: "Data Science",
+    difficulty: "Advanced",
+    thumbnail: "https://media.istockphoto.com/id/1290864946/photo/e-learning-education-concept-learning-online.jpg?s=612x612&w=0&k=20&c=y1fQ-3wbsvdDaMn-cuHPibcgozOxKQS99mIgz6DFcVA="
+  },
+  {
+    id: 1,
+    title: "Introduction to Programming",
+    description: "Learn the basics of programming.",
+    category: "Programming",
+    difficulty: "Beginner",
+    thumbnail: "https://media.istockphoto.com/id/1290864946/photo/e-learning-education-concept-learning-online.jpg?s=612x612&w=0&k=20&c=y1fQ-3wbsvdDaMn-cuHPibcgozOxKQS99mIgz6DFcVA="
+  },
+  {
+    id: 2,
+    title: "Advanced Data Science",
+    description: "Dive deep into data analysis.",
+    category: "Data Science",
+    difficulty: "Advanced",
+    thumbnail: "https://media.istockphoto.com/id/1290864946/photo/e-learning-education-concept-learning-online.jpg?s=612x612&w=0&k=20&c=y1fQ-3wbsvdDaMn-cuHPibcgozOxKQS99mIgz6DFcVA="
   },
 ];
 
