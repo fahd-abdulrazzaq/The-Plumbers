@@ -1,1 +1,1 @@
-### SIGMA ED
+### SIGMA EDU
