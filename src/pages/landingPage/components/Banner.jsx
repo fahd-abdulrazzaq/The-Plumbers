@@ -13,11 +13,11 @@ export default function Banner() {
         {/* text */}
         <div className='md:w-1/2 space-y-7 px-4'>
           <h2 className='text-4xl md:text-5xl font-bold leading-snug md:leading-snug'>
-            Unlock Your Atmost Potentials with Personalized{' '}
+            Unlock Your Potential with Personalized{' '}
             <span className='text-blue'>Learning</span>
           </h2>
           <p className='text-xl text-[#4A4A4A]'>
-            Discover courses tailored to your favourite learning styles.
+            Discover courses tailored to your learning style.
           </p>
           <NavLink
             className='btn bg-blue px-8 py-3 font-semibold text-white rounded-full'
