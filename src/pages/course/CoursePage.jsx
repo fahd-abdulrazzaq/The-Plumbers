@@ -116,12 +116,12 @@ const CoursePage = () => {
         />
         <div className="flex-1 p-8">
           <h1 className="text-3xl font-bold mb-4">{courseData.title}</h1>
-          <h2 className="text-xl mb-2">{currentModule.title}</h2>
+          <h2 className="text-xl font-bold mb-4">{currentModule.title}</h2>
           {isQuiz ? (
             <Quiz quiz={currentModule.quiz} />
           ) : (
             <>
-              <h2 className="text-2xl mb-4">{currentLesson.title}</h2>
+              <h2 className="text-2xl mb-2">{currentLesson.title}</h2>
               <div dangerouslySetInnerHTML={{ __html: currentLesson.content }} className="prose lg:prose-xl"></div>
             </>
           )}
