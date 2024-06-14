@@ -1,1 +1,1 @@
-### SIGMA E
+### SIGMA ED
