@@ -27,11 +27,10 @@ export default function Navbar() {
   return (
     <header className='max-w-screen-2xl container mx-auto fixed top-0 left-0 right-0'>
       <div
-        className={`navbar xl:px-24 ${
-          sticky
+        className={`navbar xl:px-24 ${sticky
             ? 'shadow bg-base-100 transition-all ease-in-out duration-300'
             : ''
-        }`}
+          }`}
       >
         <div className='navbar-start'>
           <div className='dropdown'>
@@ -62,10 +61,10 @@ export default function Navbar() {
                 <a>Menu</a>
                 <ul className='p-2'>
                   <li>
-                    <a>Menu 1</a>
+                    <a href='/courses'>Start Learning</a>
                   </li>
                   <li>
-                    <a>Menu 2</a>
+                    <a href='/create-course'>Create Course</a>
                   </li>
                 </ul>
               </li>
@@ -86,10 +85,10 @@ export default function Navbar() {
                 <summary>Menu</summary>
                 <ul className='p-2'>
                   <li>
-                    <a>Menu1</a>
+                    <a href='/courses'>Start Learning</a>
                   </li>
                   <li>
-                    <a>Menu2</a>
+                    <a href='/create-course'>Create Course</a>
                   </li>
                 </ul>
               </details>
@@ -102,7 +101,7 @@ export default function Navbar() {
         <div className='navbar-end'>
           {/* <a className='btn bg-blue text-white rounded-full'>Login</a> */}
           <NavLink to='/login' className='flex justifyContent-between btn bg-blue text-white rounded-full'>
-          <IoMdLogIn /> Login
+            <IoMdLogIn /> Login
           </NavLink>
         </div>
       </div>
