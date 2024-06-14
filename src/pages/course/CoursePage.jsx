@@ -17,7 +17,7 @@ const courseData = {
         },
         {
           title: "Lesson 2: Programming Languages",
-          content: "<p>A programming language is a formal language comprising a set of instructions that produce various kinds of output...</p>",
+          content: "<p>A programming language is a formal language<b> comprising a set of instructions that produce various kinds of output...</p>",
         },
       ],
     },
@@ -70,25 +70,25 @@ const CoursePage = () => {
   return (
     <div className='section-container bg-gradient-to-r from-[#FAFAFA] from-0% to-[#FCFCFC] to-100%'>
       <div className="py-24 flex max-w-6xl mx-auto">
-      <SidebarMenu
-        modules={courseData.modules}
-        currentModuleIndex={currentModuleIndex}
-        currentLessonIndex={currentLessonIndex}
-        onSelectLesson={handleSelectLesson}
-      />
-      <div className="flex-1 p-8">
-        <h1 className="text-3xl font-bold mb-4">{courseData.title}</h1>
-        <h2 className="text-2xl mb-4">{courseData.modules[0].title}</h2>
-        <h2 className="text-2xl mb-4">{currentLesson.title}</h2>
-        <div dangerouslySetInnerHTML={{ __html: currentLesson.content }} className="prose lg:prose-xl"></div>
-        <LessonNavigation
-          onNext={handleNextLesson}
-          onPrev={handlePrevLesson}
-          disablePrev={currentModuleIndex === 0 && currentLessonIndex === 0}
-          disableNext={currentModuleIndex === courseData.modules.length - 1 && currentLessonIndex === currentModule.lessons.length - 1}
+        <SidebarMenu
+          modules={courseData.modules}
+          currentModuleIndex={currentModuleIndex}
+          currentLessonIndex={currentLessonIndex}
+          onSelectLesson={handleSelectLesson}
         />
+        <div className="flex-1 p-8">
+          <h1 className="text-3xl font-bold mb-4">{courseData.title}</h1>
+          <h2 className="text-xl mb-2">{currentModule.title}</h2>
+          <h2 className="text-2xl mb-4">{currentLesson.title}</h2>
+          <div dangerouslySetInnerHTML={{ __html: currentLesson.content }} className="prose lg:prose-xl"></div>
+          <LessonNavigation
+            onNext={handleNextLesson}
+            onPrev={handlePrevLesson}
+            disablePrev={currentModuleIndex === 0 && currentLessonIndex === 0}
+            disableNext={currentModuleIndex === courseData.modules.length - 1 && currentLessonIndex === currentModule.lessons.length - 1}
+          />
+        </div>
       </div>
-    </div>
     </div>
   );
 };
