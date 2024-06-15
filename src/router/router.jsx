@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 import App from '../App';
-import LandingPage from '../pages/landingPage/landingPage';
+import LandingPage from '../pages/landingPage/LandingPage';
 import CreateCourse from '../pages/createCourse/CreateCourse';
 import Login from '../pages/Auth/Login';
 import SignUp from '../pages/Auth/SignUp';
