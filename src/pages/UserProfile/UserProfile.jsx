@@ -1,10 +1,10 @@
 import React, { useContext, useState } from 'react';
-import { UserContex } from './UserContex';
 import FileBase from 'react-file-base64';
 import { getAuth, updateProfile } from 'firebase/auth';
+import { UserContext } from '../../contexts/UserContext';
 
 const UserProfile = () => {
-  const { user } = useContext(UserContex);
+  const { user } = useContext(UserContext);
   const [name, setName] = useState('');
   const [selectedFile, setSelectedFile] = useState(null);
 

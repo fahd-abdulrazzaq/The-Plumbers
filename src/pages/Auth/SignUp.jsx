@@ -1,40 +1,41 @@
-import React, { useState, useContext } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { UserContex } from './UserContex';
-import schoolSvg from '../assets/images/school-svg.avif';
-import { Link } from 'react-router-dom';
-import app from '../auth/auth';
-import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
+import React, { useContext, useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import app from '../../auth/auth';
+import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
+import { UserContext } from '../../contexts/UserContext' ;
 
-const Login = () => {
-  const { setUser } = useContext(UserContex);
+const SignUp = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
+  const { setUser } = useContext(UserContext);
 
-  const handleLogin = async (e) => {
+  // login functionality
+  const handleSignUp = async (e) => {
     e.preventDefault();
-    const auth = getAuth(app);
 
+    const auth = getAuth(app);
     try {
-      const { user } = await signInWithEmailAndPassword(auth, email, password);
-      window.localStorage.setItem('loggedAppUser', JSON.stringify(user));
+      const { user } = await createUserWithEmailAndPassword(
+        auth,
+        email,
+        password
+      );
+
       setUser(user);
+      navigate('/profileUpdate');
 
       setEmail('');
       setPassword('');
     } catch (error) {
-      console.error(error);
+      console.log(error);
     }
   };
-  return (
-    <section className=' bg-gradient-to-r from-[#FAFAFA] from-0% to-[#FCFCFC] to-100% flex lg:flex lg:justify-between lg:items-center justify-center items-center py-20'>
-      <div className='hidden lg:flex p-10 w-[40%] h-[100%] lg:items-center lg:justify-center'>
-        <img src={schoolSvg} alt='school svg' />
-      </div>
 
+  return (
+    <section className='bg-gradient-to-r from-[#FAFAFA] from-0% to-[#FCFCFC] to-100% flex lg:flex lg:justify-between lg:items-center justify-center items-center py-20'>
       <div className='lg:flex lg:flex-col lg:justify-center lg:items-center mx-auto'>
-        <div className='mx-auto w-[20rem] mb-20 font-bold text-4xl text-center'>
+        <div className='mx-auto w-[20rem] mb-10 font-bold text-4xl text-center'>
           <h1 className='text-blue'>
             {' '}
             <span className='mr-2'>
@@ -44,7 +45,7 @@ const Login = () => {
           </h1>
         </div>
         <div className='bg-blue p-10 rounded-md'>
-          <form className='flex flex-col' onSubmit={handleLogin}>
+          <form className='flex flex-col' onSubmit={handleSignUp}>
             <div className='mb-3 flex flex-col'>
               <label htmlFor='email' className='text-xl mb-1 text-white'>
                 Email
@@ -74,14 +75,14 @@ const Login = () => {
             </div>
 
             <div className='bg-white text-center mt-10 rounded-md p-2 text-blue text-lg hover:bg-slate-950 hover:text-white hover:transition hover:duration-200'>
-              <button>Login</button>
+              <button>Sign Up</button>
             </div>
           </form>
 
           <p className='mt-4 text-white'>
-            don&apos;t have an account?{' '}
-            <Link className='text-blue bg-slate-400 p-2' to='/signup'>
-              signup
+            have an account?{' '}
+            <Link className='text-blue bg-slate-400 p-2' to='/login'>
+              login
             </Link>
           </p>
         </div>
@@ -90,4 +91,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default SignUp;
