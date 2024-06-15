@@ -4,25 +4,7 @@ import { UserContext } from '../../contexts/UserContext';
 
 const Dashboard = () => {
     const { user } = useContext(UserContext)
-    const enrolledCourses = [
-        // Example data, should be fetched from API or context
-        {
-            title: "Introduction to Programming",
-            progress: 50,
-            modulesCompleted: 1,
-            totalModules: 2,
-            lessonsCompleted: 2,
-            totalLessons: 4,
-        },
-        {
-            title: "Advanced JavaScript",
-            progress: 75,
-            modulesCompleted: 3,
-            totalModules: 4,
-            lessonsCompleted: 6,
-            totalLessons: 8,
-        },
-    ];
+    const enrolledCourses = [];
 
     return (
         <div className='section-container bg-gradient-to-r from-[#FAFAFA] from-0% to-[#FCFCFC] to-100%'>
@@ -33,7 +15,12 @@ const Dashboard = () => {
                 </div>
                 <div className='p-4 bg-white shadow-lg rounded-md'>
                     <h2 className="text-2xl text-blue font-semibold mb-4">Your Enrolled Courses</h2>
-                    <a href='' className="space-y-4">
+                    {enrolledCourses.length < 1 && (
+                        <div className='text-xlg text-center p-5 border-2 font-bold'>No Cousre Enrolled</div>
+                    )}
+
+                    {enrolledCourses && (
+                        <a href='' className="space-y-4">
                         {enrolledCourses.map((course, index) => (
                             <div key={index} className="p-4 border rounded-lg shadow-sm bg-white">
                                 <h3 className="text-xl text-blue font-semibold">{course.title}</h3>
@@ -42,8 +29,9 @@ const Dashboard = () => {
                                 </p>
                                 <ProgressBar progress={course.progress} />
                             </div>
-                        ))}
-                    </a>
+                            ))}
+                        </a>
+                    )}
                 </div>
                 <a href="/courses">
                     <button className='btn bg-blue text-white rounded-md w-full my-10 text-lg'>Explore More Courses</button>
