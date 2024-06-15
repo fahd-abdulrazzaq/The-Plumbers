@@ -1,9 +1,8 @@
 import React, { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { UserContex } from '../../contexts/UserContex';
-import schoolSvg from '../assets/images/school-svg.avif';
+import { UserContex } from '../../contexts/UserContex' ;
 import { Link } from 'react-router-dom';
-import app from '../auth/auth';
+import app from '../../auth/auth';
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 
 const Login = () => {
@@ -29,9 +28,9 @@ const Login = () => {
   };
   return (
     <section className=' bg-gradient-to-r from-[#FAFAFA] from-0% to-[#FCFCFC] to-100% flex lg:flex lg:justify-between lg:items-center justify-center items-center py-20'>
-      <div className='hidden lg:flex p-10 w-[40%] h-[100%] lg:items-center lg:justify-center'>
+      { /*<div className='hidden lg:flex p-10 w-[40%] h-[100%] lg:items-center lg:justify-center'>
         <img src={schoolSvg} alt='school svg' />
-      </div>
+      </div>*/}
 
       <div className='lg:flex lg:flex-col lg:justify-center lg:items-center mx-auto'>
         <div className='mx-auto w-[20rem] mb-20 font-bold text-4xl text-center'>

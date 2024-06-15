@@ -1,8 +1,8 @@
 import React, { useContext, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import app from '../auth/auth';
+import app from '../../auth/auth';
 import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
-import { UserContex } from '../../contexts/UserContex';
+import { UserContex } from '../../contexts/UserContex' ;
 
 const SignUp = () => {
   const [email, setEmail] = useState('');
