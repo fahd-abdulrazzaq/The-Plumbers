@@ -2,11 +2,11 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { IoMdLogIn } from 'react-icons/io';
-import { UserContex } from '../contexts/UserContex';
+import { UserContext } from '../contexts/UserContext';
 
 export default function Navbar() {
   const [sticky, setSticky] = useState(false);
-  const { user } = useContext(UserContex);
+  const { user } = useContext(UserContext);
 
   // handle scroll function
   useEffect(() => {

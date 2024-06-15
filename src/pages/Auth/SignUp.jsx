@@ -2,13 +2,13 @@ import React, { useContext, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import app from '../../auth/auth';
 import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
-import { UserContex } from '../../contexts/UserContex' ;
+import { UserContext } from '../../contexts/UserContext' ;
 
 const SignUp = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
-  const { setUser } = useContext(UserContex);
+  const { setUser } = useContext(UserContext);
 
   // login functionality
   const handleSignUp = async (e) => {
