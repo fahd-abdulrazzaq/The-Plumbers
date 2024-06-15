@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { UserContext } from '../../contexts/UserContext' ;
+import { UserContext } from '../../contexts/UserContext';
 import { Link } from 'react-router-dom';
 import app from '../../auth/auth';
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
@@ -19,6 +19,7 @@ const Login = () => {
       const { user } = await signInWithEmailAndPassword(auth, email, password);
       window.localStorage.setItem('loggedAppUser', JSON.stringify(user));
       setUser(user);
+      navigate('/dashboard');
 
       setEmail('');
       setPassword('');
@@ -28,7 +29,7 @@ const Login = () => {
   };
   return (
     <section className=' bg-gradient-to-r from-[#FAFAFA] from-0% to-[#FCFCFC] to-100% flex lg:flex lg:justify-between lg:items-center justify-center items-center py-20'>
-      { /*<div className='hidden lg:flex p-10 w-[40%] h-[100%] lg:items-center lg:justify-center'>
+      {/*<div className='hidden lg:flex p-10 w-[40%] h-[100%] lg:items-center lg:justify-center'>
         <img src={schoolSvg} alt='school svg' />
       </div>*/}
 

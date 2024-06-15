@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 import App from '../App';
-import LandingPage from '../pages/landingPage/LandingPage';
+import LandingPage from '../pages/landingPage/landingPage';
 import CreateCourse from '../pages/createCourse/CreateCourse';
 import Login from '../pages/Auth/Login';
 import SignUp from '../pages/Auth/SignUp';
@@ -27,8 +27,8 @@ const router = createBrowserRouter([
         element: <SignUp />,
       },
       {
-        path: 'dashboard',
-        element: <Dashboard />
+        path: '/dashboard',
+        element: <Dashboard />,
       },
       {
         path: '/create-course',
