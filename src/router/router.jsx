@@ -7,6 +7,7 @@ import Login from '../pages/Auth/Login';
 import SignUp from '../pages/Auth/SignUp';
 import CourseList from '../pages/courseList/CoursesList';
 import UserProfile from '../pages/UserProfile/UserProfile';
+import Dashboard from '../pages/dashboard/DashBoard';
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
         element: <SignUp />,
       },
       {
+        path: 'dashboard',
+        element: <Dashboard />
+      },
+      {
         path: '/create-course',
         element: <CreateCourse />,
       },
@@ -34,7 +39,7 @@ const router = createBrowserRouter([
         element: <CourseList />,
       },
       {
-        path: '/profileUpdate',
+        path: '/profile',
         element: <UserProfile />,
       },
     ],
