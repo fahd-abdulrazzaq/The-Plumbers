@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { UserContex } from './UserContex';
+import { UserContex } from '../../contexts/UserContex';
 import FileBase from 'react-file-base64';
 import { getAuth, updateProfile } from 'firebase/auth';
 

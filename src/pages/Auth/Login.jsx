@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { UserContex } from './UserContex';
+import { UserContex } from '../../contexts/UserContex';
 import schoolSvg from '../assets/images/school-svg.avif';
 import { Link } from 'react-router-dom';
 import app from '../auth/auth';

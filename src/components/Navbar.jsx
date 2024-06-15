@@ -2,7 +2,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { IoMdLogIn } from 'react-icons/io';
-import { UserContex } from './UserContex';
+import { UserContex } from '../contexts/UserContex';
 
 export default function Navbar() {
   const [sticky, setSticky] = useState(false);
