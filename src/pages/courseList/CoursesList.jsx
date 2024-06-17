@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
+import { coursesContext } from '../../contexts/CourseContexts'
 
-const courses = [
+/*const courses = [
   {
     id: 1,
     title: 'Introduction to Programming',
@@ -181,9 +182,12 @@ const courses = [
     thumbnail:
       'https://media.istockphoto.com/id/1290864946/photo/e-learning-education-concept-learning-online.jpg?s=612x612&w=0&k=20&c=y1fQ-3wbsvdDaMn-cuHPibcgozOxKQS99mIgz6DFcVA=',
   },
-];
+];*/
 
 const CourseList = () => {
+  const { courses } = useContext(coursesContext)
+  console.log(courses)
+
   const [selectedCategory, setSelectedCategory] = useState('');
   const [selectedDifficulty, setSelectedDifficulty] = useState('');
   const [searchTerm, setSearchTerm] = useState('');
