@@ -1,5 +1,5 @@
-import React, { useContext, useState } from 'react';
-import { coursesContext } from '../../contexts/CourseContexts'
+import React, { useContext, useEffect, useState } from 'react';
+import { CoursesContext } from '../../contexts/CourseContexts'
 
 /*const courses = [
   {
@@ -185,13 +185,17 @@ import { coursesContext } from '../../contexts/CourseContexts'
 ];*/
 
 const CourseList = () => {
-  const { courses } = useContext(coursesContext)
+  const { courses, getAllCourses } = useContext(CoursesContext)
   console.log(courses)
 
   const [selectedCategory, setSelectedCategory] = useState('');
   const [selectedDifficulty, setSelectedDifficulty] = useState('');
   const [searchTerm, setSearchTerm] = useState('');
   const [showAll, setShowAll] = useState(false);
+
+  useEffect(() => {
+    getAllCourses()
+  }, [])
 
   const filteredCourses = courses.filter((course) => {
     return (
