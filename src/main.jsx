@@ -4,9 +4,12 @@ import './index.css';
 import { RouterProvider } from 'react-router-dom';
 import router from './router/router';
 import { UserContextProvider } from './contexts/UserContext';
+import { CoursesContextProvider } from './contexts/CourseContexts';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <UserContextProvider>
-    <RouterProvider router={router} />
-  </UserContextProvider>
+  <CoursesContextProvider>
+    <UserContextProvider>
+      <RouterProvider router={router} />
+    </UserContextProvider>
+  </CoursesContextProvider>
 );
