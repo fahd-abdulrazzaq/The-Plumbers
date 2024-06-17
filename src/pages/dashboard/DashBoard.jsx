@@ -10,11 +10,11 @@ import { toast } from 'react-toastify';
 
 const Dashboard = () => {
   const { user, setUser } = useContext(UserContext);
-  const enrolledCourses = [];
+  const [enrolledCourses, setEnrolledCourses] = useState([]);
+
   const navigate = useNavigate();
 
   // feching of the data
-
   const fetchUserData = async () => {
     const auth = getAuth(app);
     auth.onAuthStateChanged(async (user) => {
@@ -33,8 +33,13 @@ const Dashboard = () => {
   };
 
   useEffect(() => {
+    if (user?.enrolledCourses) {
+      setEnrolledCourses(user.enrolledCourses);
+    } else {
+      setEnrolledCourses([]);
+    }
     fetchUserData();
-  }, []);
+  }, [user]);
 
   return (
     <div className='section-container bg-gradient-to-r from-[#FAFAFA] from-0% to-[#FCFCFC] to-100%'>
@@ -84,24 +89,31 @@ const Dashboard = () => {
           )}
 
           {enrolledCourses && (
-            <a href='' className='space-y-4'>
+            <div className='space-y-4'>
               {enrolledCourses.map((course, index) => (
                 <div
                   key={index}
-                  className='p-4 border rounded-lg shadow-sm bg-white'
+                  className='flex justify-between align-center p-4 border rounded-lg shadow-sm bg-white'
                 >
-                  <h3 className='text-xl text-blue font-semibold'>
-                    {course.title}
-                  </h3>
-                  <p className='mt-2'>
+                  <div>
+                    <h3 className='text-xl text-blue font-semibold'>
+                      {course.title}
+                    </h3>
+                    {/*<p className='mt-2'>
                     Progress: {course.progress}% ({course.lessonsCompleted}/
                     {course.totalLessons} lessons, {course.modulesCompleted}/
                     {course.totalModules} modules)
                   </p>
-                  <ProgressBar progress={course.progress} />
+                  <ProgressBar progress={course.progress} />*/}
+                  </div>
+                  <a href={`/courses/${course.id}`}
+                    className='btn bg-blue text-white end rounded-md'>
+                    Go to Course Page
+                  </a>
                 </div>
+
               ))}
-            </a>
+            </div>
           )}
         </div>
         <a href='/courses'>
