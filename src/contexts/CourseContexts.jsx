@@ -1,14 +1,14 @@
 import React, { createContext, useState } from 'react';
 import { collection, getDocs } from 'firebase/firestore'
-import { db } from '../auth/auth';
+import { coursesRef, db } from '../auth/auth';
 
 export const CoursesContext = createContext();
 
 export const CoursesContextProvider = ({ children }) => {
-  const [courses, setCourses] = useState(null);
+  const [courses, setCourses] = useState({});
 
   const getAllCourses = async () => {
-    const colRef = collection(db, 'courses');
+    const colRef = coursesRef
   
     try {
       const coursesSnapshot = await getDocs(colRef);
@@ -23,6 +23,17 @@ export const CoursesContextProvider = ({ children }) => {
       throw error;
     }
   };
+
+  const createCourse = async (course) => {
+    const colRef = coursesRef
+  
+    try {
+      course = await addDoc(colRef, course)
+    } catch (error) {
+      console.error('Error fetching courses: ', error);
+      throw error;
+    }
+  }
   
 
   return (
