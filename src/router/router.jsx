@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 import App from '../App';
 import LandingPage from '../pages/landingPage/LandingPage';
@@ -8,11 +7,14 @@ import SignUp from '../pages/Auth/SignUp';
 import CourseList from '../pages/courseList/CoursesList';
 import UserProfile from '../pages/UserProfile/UserProfile';
 import Dashboard from '../pages/dashboard/DashBoard';
+import ProtectedRoute from '../pages/Auth/ProtectedRoute';
+import ErrorPage from '../pages/Error/ErrorPage';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
+    errorElement: <ErrorPage />,
     children: [
       {
         index: true,
@@ -28,11 +30,19 @@ const router = createBrowserRouter([
       },
       {
         path: '/dashboard',
-        element: <Dashboard />,
+        element: (
+          <ProtectedRoute>
+            <Dashboard />
+          </ProtectedRoute>
+        ),
       },
       {
         path: '/create-course',
-        element: <CreateCourse />,
+        element: (
+          <ProtectedRoute>
+            <CreateCourse />,
+          </ProtectedRoute>
+        ),
       },
       {
         path: '/courses',
@@ -40,6 +50,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/profile',
+
         element: <UserProfile />,
       },
     ],

@@ -1,14 +1,18 @@
 import React, { useContext, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import app from '../../auth/auth';
+import FileBase64 from 'react-file-base64';
+import app, { db } from '../../auth/auth';
 import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
-import { UserContext } from '../../contexts/UserContext' ;
+import { setDoc, doc } from 'firebase/firestore';
+import { toast } from 'react-toastify';
 
 const SignUp = () => {
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [profileImage, setProfileImage] = useState(null);
   const navigate = useNavigate();
-  const { setUser } = useContext(UserContext);
 
   // login functionality
   const handleSignUp = async (e) => {
@@ -21,15 +25,36 @@ const SignUp = () => {
         email,
         password
       );
-
-      setUser(user);
-      navigate('/profileUpdate');
-
+      console.log(user);
+      if (user) {
+        await setDoc(doc(db, 'users', user.uid), {
+          email: user.email,
+          firstName,
+          lastName,
+          profileImage,
+        });
+        navigate('/dashboard');
+      }
+      toast.success('User created successfully', {
+        position: 'top-center',
+        autoClose: 2000,
+      });
+      setFirstName('');
+      setLastName('');
       setEmail('');
       setPassword('');
+      setProfileImage(null);
     } catch (error) {
-      console.log(error);
+      toast.error(`${error.message}`, {
+        position: 'top-center',
+        autoClose: 2000,
+      });
     }
+  };
+
+  // handling profile Image
+  const handleProfileImage = ({ base64 }) => {
+    setProfileImage(base64);
   };
 
   return (
@@ -46,6 +71,32 @@ const SignUp = () => {
         </div>
         <div className='bg-blue p-10 rounded-md'>
           <form className='flex flex-col' onSubmit={handleSignUp}>
+            <div className='mb-3 flex flex-col'>
+              <label htmlFor='firstname' className='text-xl mb-1 text-white'>
+                First name
+              </label>
+              <input
+                type='firstname'
+                id='firstname'
+                className='pt-2 invalid:text-red-400 border-none outline-none placeholder:px-2 py-2 w-80 bg-white'
+                placeholder='enter your firstname'
+                value={firstName}
+                onChange={(e) => setFirstName(e.target.value)}
+              />
+            </div>
+            <div className='mb-3 flex flex-col'>
+              <label htmlFor='lastname' className='text-xl mb-1 text-white'>
+                Last name
+              </label>
+              <input
+                type='lastname'
+                id='lastname'
+                className='pt-2 invalid:text-red-400 border-none outline-none placeholder:px-2 py-2 w-80 bg-white'
+                placeholder='enter your lastname'
+                value={lastName}
+                onChange={(e) => setLastName(e.target.value)}
+              />
+            </div>
             <div className='mb-3 flex flex-col'>
               <label htmlFor='email' className='text-xl mb-1 text-white'>
                 Email
@@ -71,6 +122,13 @@ const SignUp = () => {
                 placeholder='enter your password'
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
+              />
+            </div>
+            <div className='mt-2'>
+              <FileBase64
+                multiple={false}
+                type='file'
+                onDone={handleProfileImage}
               />
             </div>
 
