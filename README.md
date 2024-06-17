@@ -1,8 +1,18 @@
-# React + Vite
+## Educational Platform
+# Overview
+This project is an educational platform designed to provide users with access to a variety of courses. Each user has a personalized dashboard that displays their enrolled courses and tracks their progress. The platform features a user-friendly landing page, a sign-up survey to recommend courses based on user preferences, and integration with Firebase for user authentication and data storage.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Features
+    Landing Page: An introductory page explaining the platform and its benefits.
+    User Authentication: Allows users to sign up, log in, and log out securely using Firebase.
+    Dashboard: Displays the user's profile information and the courses they have enrolled in.
+    Course Enrollment: Users can browse and enroll in courses, which are then added to their dashboard.
+    Progress Tracking: Tracks and displays the user's progress in each enrolled course. (coming soon)
+    Firebase Integration: Utilizes Firebase for managing user authentication and storing user data.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Technologies Used
+    React: For building the user interface.
+    Firebase: For authentication and database.
+    Tailwind CSS: For styling the application.
+    React Router: For navigation.
+    React Toastify: For notifications.
