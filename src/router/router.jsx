@@ -9,13 +9,11 @@ import CoursePage from '../pages/course/CoursePage'
 import UserProfile from '../pages/UserProfile/UserProfile';
 import Dashboard from '../pages/dashboard/DashBoard';
 import ProtectedRoute from '../pages/Auth/ProtectedRoute';
-import ErrorPage from '../pages/Error/ErrorPage';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
-    errorElement: <ErrorPage />,
     children: [
       {
         index: true,
