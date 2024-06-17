@@ -2,6 +2,7 @@ import React, { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { UserContext } from '../../contexts/UserContext';
 import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import app from '../../auth/auth';
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 
@@ -16,15 +17,20 @@ const Login = () => {
     const auth = getAuth(app);
 
     try {
-      const { user } = await signInWithEmailAndPassword(auth, email, password);
-      window.localStorage.setItem('loggedAppUser', JSON.stringify(user));
-      setUser(user);
+      await signInWithEmailAndPassword(auth, email, password);
+      toast.success('Login successful', {
+        position: 'top-center',
+        autoClose: 2000,
+      });
       navigate('/dashboard');
-
       setEmail('');
       setPassword('');
     } catch (error) {
       console.error(error);
+      toast.error(`${error.message}`, {
+        position: 'top-center',
+        autoClose: 2000,
+      });
     }
   };
   return (

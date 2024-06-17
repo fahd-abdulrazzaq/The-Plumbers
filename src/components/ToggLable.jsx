@@ -20,7 +20,7 @@ const ToggLable = forwardRef(({ buttonLabel, children }, refs) => {
   });
 
   return (
-    <div>
+    <div className='my-3'>
       <div style={hideWhenVisible}>
         <button
           onClick={toggleVisibility}
@@ -33,12 +33,12 @@ const ToggLable = forwardRef(({ buttonLabel, children }, refs) => {
       <div style={showWhenVisible}>
         {children}
 
-        <button
+        <div
+          className='bg-blue text-white rounded-md p-2 mt-5 text-center w-[50%] mx-auto'
           onClick={toggleVisibility}
-          className='bg-blue text-white rounded-md p-2'
         >
-          Cancel
-        </button>
+          <button>Cancel</button>
+        </div>
       </div>
     </div>
   );
