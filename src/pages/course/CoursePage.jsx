@@ -1,69 +1,35 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import LessonNavigation from './components/LessonNavigation';
 import SidebarMenu from './components/SideBarMenu';
 import Quiz from './components/Quiz';
-
-const courseData = {
-  title: "Introduction to Programming",
-  description: "A beginner's course on programming fundamentals.",
-  category: "Programming",
-  difficultyLevel: "Beginner",
-  modules: [
-    {
-      title: "Module 1: Basics",
-      lessons: [
-        {
-          title: "Lesson 1: What is Programming?",
-          content: "<p>Programming is the process of creating a set of instructions that tell a computer how to perform a task...</p>",
-        },
-        {
-          title: "Lesson 2: Programming Languages",
-          content: "<p>A programming language is a formal language<b> comprising a set of instructions that produce various kinds of output...</p>",
-        },
-      ],
-      quiz: {
-        title: "Quiz 1: Basics",
-        questions: [
-          {
-            text: "What is programming?",
-            type: "Multiple Choice",
-            options: ["A set of instructions for a computer", "A type of computer", "A programming language", "None of the above"],
-            correctAnswer: "A set of instructions for a computer",
-          },
-        ],
-      },
-    },
-    {
-      title: "Module 2: Advanced Basics",
-      lessons: [
-        {
-          title: "Lesson 1: Variables and Data Types",
-          content: "<p>Variables are used to store data, and data types specify the type of data that can be stored...</p>",
-        },
-        {
-          title: "Lesson 2: Control Structures",
-          content: "<p>Control structures are constructs that allow you to dictate the flow of execution of the code...</p>",
-        },
-      ],
-      quiz: {
-        title: "Quiz 2: Advanced Basics",
-        questions: [
-          {
-            text: "What are variables used for?",
-            type: "Multiple Choice",
-            options: ["To store data", "To control the flow of a program", "To define functions", "None of the above"],
-            correctAnswer: "To store data",
-          },
-        ],
-      },
-    },
-  ],
-};
+import { useParams } from 'react-router-dom';
 
 const CoursePage = () => {
+  const { id } = useParams();
+
+  const [courses, setCourses] = useState([]);
   const [currentModuleIndex, setCurrentModuleIndex] = useState(0);
   const [currentLessonIndex, setCurrentLessonIndex] = useState(0);
   const [isQuiz, setIsQuiz] = useState(false);
+
+  useEffect(() => {
+    fetch('/json/courses.json')
+      .then(res => res.json())
+      .then(data => {
+        setCourses(data);
+      })
+      .catch(error => {
+        console.error('Error fetching courses:', error);
+        // Handle error or set appropriate state indicating error
+      });
+  }, []);
+
+  // Ensure courseData is defined before accessing properties
+  const courseData = courses[id];
+
+  if (!courseData) {
+    return <p>Loading...</p>; // Add loading state or error handling
+  }
 
   const currentModule = courseData.modules[currentModuleIndex];
   const currentLesson = currentModule.lessons[currentLessonIndex];
@@ -98,7 +64,7 @@ const CoursePage = () => {
     setIsQuiz(false);
   };
 
-  const handleSelectQuiz = (moduleIndex) => {
+  const handleSelectQuiz = moduleIndex => {
     setCurrentModuleIndex(moduleIndex);
     setIsQuiz(true);
   };

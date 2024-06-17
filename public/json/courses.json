@@ -1,0 +1,1388 @@
+[
+    {
+        "title": "Introduction to Programming",
+        "description": "A beginner's course on programming fundamentals.",
+        "category": "Programming",
+        "difficultyLevel": "Beginner",
+        "modules": [
+            {
+                "title": "Module 1: Basics",
+                "lessons": [
+                    {
+                        "title": "Lesson 1: What is Programming?",
+                        "content": "<p>Programming is the process of creating a set of instructions that tell a computer how to perform a task...</p>"
+                    },
+                    {
+                        "title": "Lesson 2: Programming Languages",
+                        "content": "<p>A programming language is a formal language comprising a set of instructions that produce various kinds of output...</p>"
+                    }
+                ],
+                "quiz": {
+                    "title": "Quiz 1: Basics",
+                    "questions": [
+                        {
+                            "text": "What is programming?",
+                            "type": "Multiple Choice",
+                            "options": [
+                                "A set of instructions for a computer",
+                                "A type of computer",
+                                "A programming language",
+                                "None of the above"
+                            ],
+                            "correctAnswer": "A set of instructions for a computer"
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Module 2: Advanced Basics",
+                "lessons": [
+                    {
+                        "title": "Lesson 1: Variables and Data Types",
+                        "content": "<p>Variables are used to store data, and data types specify the type of data that can be stored...</p>"
+                    },
+                    {
+                        "title": "Lesson 2: Control Structures",
+                        "content": "<p>Control structures are constructs that allow you to dictate the flow of execution of the code...</p>"
+                    }
+                ],
+                "quiz": {
+                    "title": "Quiz 2: Advanced Basics",
+                    "questions": [
+                        {
+                            "text": "What are variables used for?",
+                            "type": "Multiple Choice",
+                            "options": [
+                                "To store data",
+                                "To control the flow of a program",
+                                "To define functions",
+                                "None of the above"
+                            ],
+                            "correctAnswer": "To store data"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "title": "Advanced Data Science",
+        "description": "Dive deep into data analysis.",
+        "category": "Data Science",
+        "difficultyLevel": "Advanced",
+        "modules": [
+            {
+                "title": "Module 1: Data Analysis Techniques",
+                "lessons": [
+                    {
+                        "title": "Lesson 1: Data Cleaning",
+                        "content": "<p>Data cleaning is the process of detecting and correcting (or removing) corrupt or inaccurate records from a record set, table, or database...</p>"
+                    },
+                    {
+                        "title": "Lesson 2: Exploratory Data Analysis",
+                        "content": "<p>Exploratory data analysis (EDA) is an approach to analyzing data sets to summarize their main characteristics, often with visual methods...</p>"
+                    }
+                ],
+                "quiz": {
+                    "title": "Quiz 1: Data Analysis Techniques",
+                    "questions": [
+                        {
+                            "text": "What is data cleaning?",
+                            "type": "Multiple Choice",
+                            "options": [
+                                "A process of detecting and correcting corrupt or inaccurate data",
+                                "A method to summarize data characteristics visually",
+                                "A type of data analysis technique",
+                                "None of the above"
+                            ],
+                            "correctAnswer": "A process of detecting and correcting corrupt or inaccurate data"
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Module 2: Machine Learning Models",
+                "lessons": [
+                    {
+                        "title": "Lesson 1: Supervised Learning",
+                        "content": "<p>Supervised learning is the machine learning task of learning a function that maps an input to an output based on example input-output pairs...</p>"
+                    },
+                    {
+                        "title": "Lesson 2: Unsupervised Learning",
+                        "content": "<p>Unsupervised learning is a type of machine learning algorithm used to draw inferences from datasets consisting of input data without labeled responses...</p>"
+                    }
+                ],
+                "quiz": {
+                    "title": "Quiz 2: Machine Learning Models",
+                    "questions": [
+                        {
+                            "text": "What is supervised learning?",
+                            "type": "Multiple Choice",
+                            "options": [
+                                "Learning from labeled data",
+                                "Learning without any labels",
+                                "Learning to write code",
+                                "None of the above"
+                            ],
+                            "correctAnswer": "Learning from labeled data"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "title": "Web Development Fundamentals",
+        "description": "Learn essential skills for building modern websites.",
+        "category": "Web Development",
+        "difficultyLevel": "Intermediate",
+        "modules": [
+            {
+                "title": "Module 1: Frontend Development",
+                "lessons": [
+                    {
+                        "title": "Lesson 1: HTML Basics",
+                        "content": "<p>HTML is the standard markup language for creating web pages and web applications...</p>"
+                    },
+                    {
+                        "title": "Lesson 2: CSS Styling",
+                        "content": "<p>CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation of a document written in HTML or XML...</p>"
+                    }
+                ],
+                "quiz": {
+                    "title": "Quiz 1: Frontend Basics",
+                    "questions": [
+                        {
+                            "text": "What does HTML stand for?",
+                            "type": "Multiple Choice",
+                            "options": [
+                                "Hyper Text Markup Language",
+                                "Hyperlinks and Text Markup Language",
+                                "Home Tool Markup Language",
+                                "None of the above"
+                            ],
+                            "correctAnswer": "Hyper Text Markup Language"
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Module 2: Backend Development",
+                "lessons": [
+                    {
+                        "title": "Lesson 1: Introduction to Node.js",
+                        "content": "<p>Node.js is an open-source, cross-platform JavaScript runtime environment that executes JavaScript code outside of a web browser...</p>"
+                    },
+                    {
+                        "title": "Lesson 2: Express Framework",
+                        "content": "<p>Express is a minimal and flexible Node.js web application framework that provides a robust set of features to develop web and mobile applications...</p>"
+                    }
+                ],
+                "quiz": {
+                    "title": "Quiz 2: Backend Basics",
+                    "questions": [
+                        {
+                            "text": "What is Node.js?",
+                            "type": "Multiple Choice",
+                            "options": [
+                                "A JavaScript runtime environment",
+                                "A web browser",
+                                "A programming language",
+                                "None of the above"
+                            ],
+                            "correctAnswer": "A JavaScript runtime environment"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "title": "Introduction to Artificial Intelligence",
+        "description": "Explore the principles and techniques of AI.",
+        "category": "Artificial Intelligence",
+        "difficultyLevel": "Intermediate",
+        "modules": [
+            {
+                "title": "Module 1: AI Fundamentals",
+                "lessons": [
+                    {
+                        "title": "Lesson 1: Introduction to AI",
+                        "content": "<p>Artificial Intelligence (AI) is the simulation of human intelligence processes by machines, especially computer systems...</p>"
+                    },
+                    {
+                        "title": "Lesson 2: Machine Learning Basics",
+                        "content": "<p>Machine learning is a subset of AI that allows systems to learn and improve from experience without being explicitly programmed...</p>"
+                    }
+                ],
+                "quiz": {
+                    "title": "Quiz 1: AI Fundamentals",
+                    "questions": [
+                        {
+                            "text": "What is AI?",
+                            "type": "Multiple Choice",
+                            "options": [
+                                "Simulation of human intelligence processes by machines",
+                                "Advanced computer programming",
+                                "Robotics technology",
+                                "None of the above"
+                            ],
+                            "correctAnswer": "Simulation of human intelligence processes by machines"
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Module 2: Deep Learning",
+                "lessons": [
+                    {
+                        "title": "Lesson 1: Neural Networks",
+                        "content": "<p>Neural networks are a set of algorithms, modeled loosely after the human brain, that are designed to recognize patterns...</p>"
+                    },
+                    {
+                        "title": "Lesson 2: Applications of Deep Learning",
+                        "content": "<p>Deep learning is used in various fields such as computer vision, speech recognition, and natural language processing...</p>"
+                    }
+                ],
+                "quiz": {
+                    "title": "Quiz 2: Deep Learning",
+                    "questions": [
+                        {
+                            "text": "What are neural networks?",
+                            "type": "Multiple Choice",
+                            "options": [
+                                "Algorithms modeled after the human brain",
+                                "A type of computer network",
+                                "A programming language",
+                                "None of the above"
+                            ],
+                            "correctAnswer": "Algorithms modeled after the human brain"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "title": "Mobile App Development",
+        "description": "Learn to build mobile applications for iOS and Android.",
+        "category": "Mobile Development",
+        "difficultyLevel": "Intermediate",
+        "modules": [
+            {
+                "title": "Module 1: iOS Development",
+                "lessons": [
+                    {
+                        "title": "Lesson 1: Swift Programming Language",
+                        "content": "<p>Swift is a powerful and intuitive programming language for macOS, iOS, watchOS, and tvOS...</p>"
+                    },
+                    {
+                        "title": "Lesson 2: Xcode IDE",
+                        "content": "<p>Xcode is Apple's integrated development environment (IDE) for macOS used to develop software for macOS, iOS, iPadOS, watchOS, and tvOS...</p>"
+                    }
+                ],
+                "quiz": {
+                    "title": "Quiz 1: iOS Development",
+                    "questions": [
+                        {
+                            "text": "What is Swift?",
+                            "type": "Multiple Choice",
+                            "options": [
+                                "A programming language for Apple platforms",
+                                "A type of bird",
+                                "A software development tool",
+                                "None of the above"
+                            ],
+                            "correctAnswer": "A programming language for Apple platforms"
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Module 2: Android Development",
+                "lessons": [
+                    {
+                        "title": "Lesson 1: Kotlin Programming Language",
+                        "content": "<p>Kotlin is a statically typed programming language that runs on the Java Virtual Machine (JVM) and also can be compiled to JavaScript source code...</p>"
+                    },
+                    {
+                        "title": "Lesson 2: Android Studio IDE",
+                        "content": "<p>Android Studio is the official integrated development environment (IDE) for Google's Android operating system...</p>"
+                    }
+                ],
+                "quiz": {
+                    "title": "Quiz 2: Android Development",
+                    "questions": [
+                        {
+                            "text": "What is Kotlin?",
+                            "type": "Multiple Choice",
+                            "options": [
+                                "A programming language for Android development",
+                                "A type of dessert",
+                                "A mobile device",
+                                "None of the above"
+                            ],
+                            "correctAnswer": "A programming language for Android development"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "title": "Cybersecurity Fundamentals",
+        "description": "Learn the basics of cybersecurity and protecting digital assets.",
+        "category": "Cybersecurity",
+        "difficultyLevel": "Intermediate",
+        "modules": [
+            {
+                "title": "Module 1: Cyber Threats",
+                "lessons": [
+                    {
+                        "title": "Lesson 1: Types of Cyber Attacks",
+                        "content": "<p>Common types of cyber attacks include phishing, malware, ransomware, and denial-of-service (DoS) attacks...</p>"
+                    },
+                    {
+                        "title": "Lesson 2: Cybersecurity Best Practices",
+                        "content": "<p>Cybersecurity best practices involve measures taken to protect digital data from unauthorized access or attacks...</p>"
+                    }
+                ],
+                "quiz": {
+                    "title": "Quiz 1: Cyber Threats",
+                    "questions": [
+                        {
+                            "text": "What are common types of cyber attacks?",
+                            "type": "Multiple Choice",
+                            "options": [
+                                "Phishing, malware, ransomware, denial-of-service (DoS)",
+                                "Physical attacks, social engineering, fraud",
+                                "Software bugs, system errors, hardware failures",
+                                "None of the above"
+                            ],
+                            "correctAnswer": "Phishing, malware, ransomware, denial-of-service (DoS)"
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Module 2: Network Security",
+                "lessons": [
+                    {
+                        "title": "Lesson 1: Firewall and VPN",
+                        "content": "<p>A firewall is a network security device that monitors and controls incoming and outgoing network traffic...</p>"
+                    },
+                    {
+                        "title": "Lesson 2: Encryption Techniques",
+                        "content": "<p>Encryption is the process of converting data into a format that cannot be easily accessed by unauthorized users...</p>"
+                    }
+                ],
+                "quiz": {
+                    "title": "Quiz 2: Network Security",
+                    "questions": [
+                        {
+                            "text": "What is a firewall?",
+                            "type": "Multiple Choice",
+                            "options": [
+                                "A network security device",
+                                "A type of software bug",
+                                "A programming language feature",
+                                "None of the above"
+                            ],
+                            "correctAnswer": "A network security device"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "title": "Graphic Design Essentials",
+        "description": "Learn the fundamentals of graphic design.",
+        "category": "Graphic Design",
+        "difficultyLevel": "Beginner",
+        "modules": [
+            {
+                "title": "Module 1: Design Principles",
+                "lessons": [
+                    {
+                        "title": "Lesson 1: Color Theory",
+                        "content": "<p>Color theory is the collection of rules and guidelines that designers use to communicate with users through appealing color schemes...</p>"
+                    },
+                    {
+                        "title": "Lesson 2: Typography",
+                        "content": "<p>Typography is the art and technique of arranging type to make written language legible, readable, and appealing when displayed...</p>"
+                    }
+                ],
+                "quiz": {
+                    "title": "Quiz 1: Design Principles",
+                    "questions": [
+                        {
+                            "text": "What is typography?",
+                            "type": "Multiple Choice",
+                            "options": [
+                                "The art and technique of arranging type",
+                                "A design software",
+                                "A color theory concept",
+                                "None of the above"
+                            ],
+                            "correctAnswer": "The art and technique of arranging type"
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Module 2: Adobe Creative Suite",
+                "lessons": [
+                    {
+                        "title": "Lesson 1: Adobe Photoshop Basics",
+                        "content": "<p>Adobe Photoshop is a raster graphics editor developed and published by Adobe Inc. for Windows and macOS...</p>"
+                    },
+                    {
+                        "title": "Lesson 2: Adobe Illustrator Basics",
+                        "content": "<p>Adobe Illustrator is a vector graphics editor developed and marketed by Adobe Inc. for Windows and macOS...</p>"
+                    }
+                ],
+                "quiz": {
+                    "title": "Quiz 2: Adobe Creative Suite",
+                    "questions": [
+                        {
+                            "text": "What is Adobe Photoshop?",
+                            "type": "Multiple Choice",
+                            "options": [
+                                "A raster graphics editor",
+                                "A web browser",
+                                "A computer hardware",
+                                "None of the above"
+                            ],
+                            "correctAnswer": "A raster graphics editor"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "title": "Project Management Fundamentals",
+        "description": "Learn essential project management skills.",
+        "category": "Project Management",
+        "difficultyLevel": "Intermediate",
+        "modules": [
+            {
+                "title": "Module 1: Project Initiation",
+                "lessons": [
+                    {
+                        "title": "Lesson 1: Project Planning",
+                        "content": "<p>Project planning is the process of defining the scope, objectives, and steps to achieve them...</p>"
+                    },
+                    {
+                        "title": "Lesson 2: Stakeholder Management",
+                        "content": "<p>Stakeholder management is the process of identifying, analyzing, and engaging stakeholders to achieve project goals...</p>"
+                    }
+                ],
+                "quiz": {
+                    "title": "Quiz 1: Project Initiation",
+                    "questions": [
+                        {
+                            "text": "What is project planning?",
+                            "type": "Multiple Choice",
+                            "options": [
+                                "Defining the scope, objectives, and steps to achieve them",
+                                "Identifying stakeholders",
+                                "Analyzing project risks",
+                                "None of the above"
+                            ],
+                            "correctAnswer": "Defining the scope, objectives, and steps to achieve them"
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Module 2: Project Execution",
+                "lessons": [
+                    {
+                        "title": "Lesson 1: Time Management",
+                        "content": "<p>Time management involves organizing and planning how to divide your time between specific activities...</p>"
+                    },
+                    {
+                        "title": "Lesson 2: Resource Allocation",
+                        "content": "<p>Resource allocation is the process of assigning and managing resources to effectively complete a project task or goal...</p>"
+                    }
+                ],
+                "quiz": {
+                    "title": "Quiz 2: Project Execution",
+                    "questions": [
+                        {
+                            "text": "What is time management in project management?",
+                            "type": "Multiple Choice",
+                            "options": [
+                                "Organizing and planning how to divide your time",
+                                "Assigning resources to project tasks",
+                                "Analyzing project progress",
+                                "None of the above"
+                            ],
+                            "correctAnswer": "Organizing and planning how to divide your time"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "title": "Digital Marketing Essentials",
+        "description": "Learn essential digital marketing skills.",
+        "category": "Digital Marketing",
+        "difficultyLevel": "Intermediate",
+        "modules": [
+            {
+                "title": "Module 1: Marketing Fundamentals",
+                "lessons": [
+                    {
+                        "title": "Lesson 1: Introduction to Digital Marketing",
+                        "content": "<p>Digital marketing encompasses all marketing efforts that use an electronic device or the internet...</p>"
+                    },
+                    {
+                        "title": "Lesson 2: Customer Journey Mapping",
+                        "content": "<p>Customer journey mapping is the process of visualizing the steps a customer takes from initial awareness to purchase and beyond...</p>"
+                    }
+                ],
+                "quiz": {
+                    "title": "Quiz 1: Marketing Fundamentals",
+                    "questions": [
+                        {
+                            "text": "What is digital marketing?",
+                            "type": "Multiple Choice",
+                            "options": [
+                                "Marketing efforts using electronic devices or the internet",
+                                "Traditional marketing methods",
+                                "Product development techniques",
+                                "None of the above"
+                            ],
+                            "correctAnswer": "Marketing efforts using electronic devices or the internet"
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Module 2: Social Media Marketing",
+                "lessons": [
+                    {
+                        "title": "Lesson 1: Social Media Platforms",
+                        "content": "<p>Social media platforms are web-based technology that enables people to create, share, or exchange information, ideas, and pictures/videos in virtual communities...</p>"
+                    },
+                    {
+                        "title": "Lesson 2: Content Strategy",
+                        "content": "<p>Content strategy refers to the planning, development, and management of content—written or in other media...</p>"
+                    }
+                ],
+                "quiz": {
+                    "title": "Quiz 2: Social Media Marketing",
+                    "questions": [
+                        {
+                            "text": "What is content strategy?",
+                            "type": "Multiple Choice",
+                            "options": [
+                                "Planning, development, and management of content",
+                                "Posting random content on social media",
+                                "Analyzing social media metrics",
+                                "None of the above"
+                            ],
+                            "correctAnswer": "Planning, development, and management of content"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "title": "UI/UX Design Principles",
+        "description": "Learn the principles of user interface and user experience design.",
+        "category": "UI/UX Design",
+        "difficultyLevel": "Intermediate",
+        "modules": [
+            {
+                "title": "Module 1: UI Design",
+                "lessons": [
+                    {
+                        "title": "Lesson 1: Interface Elements",
+                        "content": "<p>Interface elements are the building blocks of any software application or website...</p>"
+                    },
+                    {
+                        "title": "Lesson 2: Responsive Design",
+                        "content": "<p>Responsive design is an approach to web design that makes web pages render well on a variety of devices and window or screen sizes...</p>"
+                    }
+                ],
+                "quiz": {
+                    "title": "Quiz 1: UI Design",
+                    "questions": [
+                        {
+                            "text": "What is responsive design?",
+                            "type": "Multiple Choice",
+                            "options": [
+                                "An approach to web design for multiple devices",
+                                "A type of programming language",
+                                "A graphic design technique",
+                                "None of the above"
+                            ],
+                            "correctAnswer": "An approach to web design for multiple devices"
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Module 2: UX Design",
+                "lessons": [
+                    {
+                        "title": "Lesson 1: User Research",
+                        "content": "<p>User research involves understanding user behaviors, needs, and motivations through observation techniques, task analysis, and other feedback methodologies...</p>"
+                    },
+                    {
+                        "title": "Lesson 2: Usability Testing",
+                        "content": "<p>Usability testing is a technique used to evaluate a product or service by testing it with representative users...</p>"
+                    }
+                ],
+                "quiz": {
+                    "title": "Quiz 2: UX Design",
+                    "questions": [
+                        {
+                            "text": "What is usability testing?",
+                            "type": "Multiple Choice",
+                            "options": [
+                                "Evaluating a product or service with representative users",
+                                "Testing software code",
+                                "Analyzing user interface elements",
+                                "None of the above"
+                            ],
+                            "correctAnswer": "Evaluating a product or service with representative users"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "title": "Financial Literacy",
+        "description": "Learn the basics of personal finance and investment.",
+        "category": "Finance",
+        "difficultyLevel": "Beginner",
+        "modules": [
+            {
+                "title": "Module 1: Personal Finance Basics",
+                "lessons": [
+                    {
+                        "title": "Lesson 1: Budgeting",
+                        "content": "<p>Budgeting is the process of creating a plan to spend your money...</p>"
+                    },
+                    {
+                        "title": "Lesson 2: Savings and Investments",
+                        "content": "<p>Savings and investments involve putting money aside for future use and making financial decisions to grow your wealth...</p>"
+                    }
+                ],
+                "quiz": {
+                    "title": "Quiz 1: Personal Finance Basics",
+                    "questions": [
+                        {
+                            "text": "What is budgeting?",
+                            "type": "Multiple Choice",
+                            "options": [
+                                "Creating a plan to spend your money",
+                                "Investing in stocks",
+                                "Paying off debts",
+                                "None of the above"
+                            ],
+                            "correctAnswer": "Creating a plan to spend your money"
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Module 2: Investment Strategies",
+                "lessons": [
+                    {
+                        "title": "Lesson 1: Types of Investments",
+                        "content": "<p>Common types of investments include stocks, bonds, mutual funds, real estate, and cryptocurrencies...</p>"
+                    },
+                    {
+                        "title": "Lesson 2: Risk Management",
+                        "content": "<p>Risk management involves identifying, assessing, and prioritizing risks followed by coordinated efforts to minimize, monitor, and control the probability or impact of unfortunate events...</p>"
+                    }
+                ],
+                "quiz": {
+                    "title": "Quiz 2: Investment Strategies",
+                    "questions": [
+                        {
+                            "text": "What is risk management?",
+                            "type": "Multiple Choice",
+                            "options": [
+                                "Identifying and minimizing risks",
+                                "Investing in high-risk assets",
+                                "Calculating financial returns",
+                                "None of the above"
+                            ],
+                            "correctAnswer": "Identifying and minimizing risks"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "title": "Data Science Foundations",
+        "description": "Learn the fundamentals of data science and analytics.",
+        "category": "Data Science",
+        "difficultyLevel": "Intermediate",
+        "modules": [
+            {
+                "title": "Module 1: Data Analysis",
+                "lessons": [
+                    {
+                        "title": "Lesson 1: Introduction to Data Science",
+                        "content": "<p>Data science is an interdisciplinary field that uses scientific methods, processes, algorithms, and systems to extract knowledge and insights from structured and unstructured data...</p>"
+                    },
+                    {
+                        "title": "Lesson 2: Data Visualization",
+                        "content": "<p>Data visualization is the graphical representation of information and data to aid understanding and decision-making...</p>"
+                    }
+                ],
+                "quiz": {
+                    "title": "Quiz 1: Data Analysis",
+                    "questions": [
+                        {
+                            "text": "What is data science?",
+                            "type": "Multiple Choice",
+                            "options": [
+                                "An interdisciplinary field using scientific methods to extract insights from data",
+                                "A type of computer hardware",
+                                "A programming language",
+                                "None of the above"
+                            ],
+                            "correctAnswer": "An interdisciplinary field using scientific methods to extract insights from data"
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Module 2: Machine Learning",
+                "lessons": [
+                    {
+                        "title": "Lesson 1: Supervised Learning",
+                        "content": "<p>Supervised learning is a type of machine learning where the algorithm learns from labeled training data...</p>"
+                    },
+                    {
+                        "title": "Lesson 2: Unsupervised Learning",
+                        "content": "<p>Unsupervised learning is a type of machine learning where the algorithm learns from unlabeled data...</p>"
+                    }
+                ],
+                "quiz": {
+                    "title": "Quiz 2: Machine Learning",
+                    "questions": [
+                        {
+                            "text": "What is supervised learning?",
+                            "type": "Multiple Choice",
+                            "options": [
+                                "Learning from labeled data",
+                                "Learning without data",
+                                "Learning from structured data",
+                                "None of the above"
+                            ],
+                            "correctAnswer": "Learning from labeled data"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "title": "Full-Stack Web Development",
+        "description": "Master both front-end and back-end web development.",
+        "category": "Web Development",
+        "difficultyLevel": "Intermediate",
+        "modules": [
+            {
+                "title": "Module 1: Front-End Development",
+                "lessons": [
+                    {
+                        "title": "Lesson 1: HTML and CSS Basics",
+                        "content": "<p>HTML (Hypertext Markup Language) is the standard markup language for creating web pages and web applications...</p>"
+                    },
+                    {
+                        "title": "Lesson 2: JavaScript Fundamentals",
+                        "content": "<p>JavaScript is a high-level programming language that is widely used for both front-end and back-end web development...</p>"
+                    }
+                ],
+                "quiz": {
+                    "title": "Quiz 1: Front-End Development",
+                    "questions": [
+                        {
+                            "text": "What is HTML used for?",
+                            "type": "Multiple Choice",
+                            "options": [
+                                "Creating web pages",
+                                "Managing databases",
+                                "Running server-side scripts",
+                                "None of the above"
+                            ],
+                            "correctAnswer": "Creating web pages"
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Module 2: Back-End Development",
+                "lessons": [
+                    {
+                        "title": "Lesson 1: Node.js and Express",
+                        "content": "<p>Node.js is an open-source, cross-platform JavaScript runtime environment that executes JavaScript code outside a web browser...</p>"
+                    },
+                    {
+                        "title": "Lesson 2: Database Management with MongoDB",
+                        "content": "<p>MongoDB is a NoSQL database program that uses JSON-like documents with schema...</p>"
+                    }
+                ],
+                "quiz": {
+                    "title": "Quiz 2: Back-End Development",
+                    "questions": [
+                        {
+                            "text": "What is Node.js?",
+                            "type": "Multiple Choice",
+                            "options": [
+                                "A JavaScript runtime environment",
+                                "A database management system",
+                                "A programming language",
+                                "None of the above"
+                            ],
+                            "correctAnswer": "A JavaScript runtime environment"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "title": "Artificial Intelligence Basics",
+        "description": "Explore the foundations of artificial intelligence.",
+        "category": "Artificial Intelligence",
+        "difficultyLevel": "Intermediate",
+        "modules": [
+            {
+                "title": "Module 1: Introduction to AI",
+                "lessons": [
+                    {
+                        "title": "Lesson 1: AI Concepts and Applications",
+                        "content": "<p>Artificial intelligence (AI) is the simulation of human intelligence processes by machines, especially computer systems...</p>"
+                    },
+                    {
+                        "title": "Lesson 2: Machine Learning Algorithms",
+                        "content": "<p>Machine learning is a subset of AI that enables computers to learn from data and make decisions or predictions...</p>"
+                    }
+                ],
+                "quiz": {
+                    "title": "Quiz 1: AI Concepts",
+                    "questions": [
+                        {
+                            "text": "What is artificial intelligence?",
+                            "type": "Multiple Choice",
+                            "options": [
+                                "Simulation of human intelligence processes by machines",
+                                "A type of computer virus",
+                                "A new programming language",
+                                "None of the above"
+                            ],
+                            "correctAnswer": "Simulation of human intelligence processes by machines"
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Module 2: Deep Learning",
+                "lessons": [
+                    {
+                        "title": "Lesson 1: Neural Networks",
+                        "content": "<p>Neural networks are a set of algorithms, modeled loosely after the human brain, that are designed to recognize patterns...</p>"
+                    },
+                    {
+                        "title": "Lesson 2: Natural Language Processing (NLP)",
+                        "content": "<p>Natural language processing is a subfield of AI focused on enabling computers to understand, interpret, and generate human language...</p>"
+                    }
+                ],
+                "quiz": {
+                    "title": "Quiz 2: Deep Learning",
+                    "questions": [
+                        {
+                            "text": "What are neural networks?",
+                            "type": "Multiple Choice",
+                            "options": [
+                                "Algorithms modeled loosely after the human brain",
+                                "A type of computer hardware",
+                                "A programming language feature",
+                                "None of the above"
+                            ],
+                            "correctAnswer": "Algorithms modeled loosely after the human brain"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "title": "Mobile App Development with React Native",
+        "description": "Build cross-platform mobile apps using React Native.",
+        "category": "Mobile App Development",
+        "difficultyLevel": "Intermediate",
+        "modules": [
+            {
+                "title": "Module 1: Getting Started with React Native",
+                "lessons": [
+                    {
+                        "title": "Lesson 1: Introduction to React Native",
+                        "content": "<p>React Native is a JavaScript framework for building native mobile applications using React...</p>"
+                    },
+                    {
+                        "title": "Lesson 2: Setting Up Development Environment",
+                        "content": "<p>Setting up the development environment involves installing necessary tools and dependencies to start developing React Native apps...</p>"
+                    }
+                ],
+                "quiz": {
+                    "title": "Quiz 1: React Native Basics",
+                    "questions": [
+                        {
+                            "text": "What is React Native?",
+                            "type": "Multiple Choice",
+                            "options": [
+                                "A JavaScript framework for building native mobile applications",
+                                "A cross-platform game engine",
+                                "A cloud computing platform",
+                                "None of the above"
+                            ],
+                            "correctAnswer": "A JavaScript framework for building native mobile applications"
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Module 2: Advanced React Native Concepts",
+                "lessons": [
+                    {
+                        "title": "Lesson 1: Navigation and Routing",
+                        "content": "<p>Navigation and routing in React Native involve handling navigation between different screens and managing app routes...</p>"
+                    },
+                    {
+                        "title": "Lesson 2: State Management with Redux",
+                        "content": "<p>Redux is a predictable state container for JavaScript apps that helps manage application state...</p>"
+                    }
+                ],
+                "quiz": {
+                    "title": "Quiz 2: React Native Advanced",
+                    "questions": [
+                        {
+                            "text": "What is Redux used for?",
+                            "type": "Multiple Choice",
+                            "options": [
+                                "State management in JavaScript apps",
+                                "Routing in React Native apps",
+                                "Styling components",
+                                "None of the above"
+                            ],
+                            "correctAnswer": "State management in JavaScript apps"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "title": "Advanced Cybersecurity Practices",
+        "description": "Explore advanced cybersecurity techniques and strategies.",
+        "category": "Cybersecurity",
+        "difficultyLevel": "Advanced",
+        "modules": [
+            {
+                "title": "Module 1: Ethical Hacking",
+                "lessons": [
+                    {
+                        "title": "Lesson 1: Penetration Testing",
+                        "content": "<p>Penetration testing, also known as pen testing, is a simulated cyber attack against computer systems, networks, or web applications to find vulnerabilities...</p>"
+                    },
+                    {
+                        "title": "Lesson 2: Vulnerability Assessment",
+                        "content": "<p>Vulnerability assessment is the process of identifying, quantifying, and prioritizing vulnerabilities in a system...</p>"
+                    }
+                ],
+                "quiz": {
+                    "title": "Quiz 1: Ethical Hacking",
+                    "questions": [
+                        {
+                            "text": "What is penetration testing?",
+                            "type": "Multiple Choice",
+                            "options": [
+                                "Simulated cyber attack to find vulnerabilities",
+                                "Creating secure passwords",
+                                "Encrypting data",
+                                "None of the above"
+                            ],
+                            "correctAnswer": "Simulated cyber attack to find vulnerabilities"
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Module 2: Incident Response",
+                "lessons": [
+                    {
+                        "title": "Lesson 1: Incident Handling",
+                        "content": "<p>Incident handling involves responding to and managing security incidents and breaches in an organization...</p>"
+                    },
+                    {
+                        "title": "Lesson 2: Forensic Analysis",
+                        "content": "<p>Forensic analysis is the process of using scientific principles and techniques to collect, preserve, and analyze digital evidence...</p>"
+                    }
+                ],
+                "quiz": {
+                    "title": "Quiz 2: Incident Response",
+                    "questions": [
+                        {
+                            "text": "What is incident handling?",
+                            "type": "Multiple Choice",
+                            "options": [
+                                "Responding to and managing security incidents",
+                                "Preventing cyber attacks",
+                                "Building firewalls",
+                                "None of the above"
+                            ],
+                            "correctAnswer": "Responding to and managing security incidents"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "title": "Graphic Design Fundamentals",
+        "description": "Master the fundamentals of graphic design and visual communication.",
+        "category": "Graphic Design",
+        "difficultyLevel": "Beginner",
+        "modules": [
+            {
+                "title": "Module 1: Design Principles",
+                "lessons": [
+                    {
+                        "title": "Lesson 1: Typography",
+                        "content": "<p>Typography is the art and technique of arranging type to make written language legible, readable, and appealing...</p>"
+                    },
+                    {
+                        "title": "Lesson 2: Color Theory",
+                        "content": "<p>Color theory is the study of color and its impact on human perception and emotion...</p>"
+                    }
+                ],
+                "quiz": {
+                    "title": "Quiz 1: Design Principles",
+                    "questions": [
+                        {
+                            "text": "What is typography?",
+                            "type": "Multiple Choice",
+                            "options": [
+                                "Art and technique of arranging type",
+                                "Designing logos",
+                                "Editing photos",
+                                "None of the above"
+                            ],
+                            "correctAnswer": "Art and technique of arranging type"
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Module 2: Visual Communication",
+                "lessons": [
+                    {
+                        "title": "Lesson 1: Layout and Composition",
+                        "content": "<p>Layout and composition in graphic design refer to the arrangement and structure of visual elements...</p>"
+                    },
+                    {
+                        "title": "Lesson 2: Branding and Identity",
+                        "content": "<p>Branding and identity design involve creating visual elements that represent a brand's personality and values...</p>"
+                    }
+                ],
+                "quiz": {
+                    "title": "Quiz 2: Visual Communication",
+                    "questions": [
+                        {
+                            "text": "What does branding involve?",
+                            "type": "Multiple Choice",
+                            "options": [
+                                "Creating visual elements that represent a brand",
+                                "Analyzing market trends",
+                                "Developing software",
+                                "None of the above"
+                            ],
+                            "correctAnswer": "Creating visual elements that represent a brand"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "title": "Project Management Essentials",
+        "description": "Learn essential project management skills and methodologies.",
+        "category": "Project Management",
+        "difficultyLevel": "Intermediate",
+        "modules": [
+            {
+                "title": "Module 1: Project Planning",
+                "lessons": [
+                    {
+                        "title": "Lesson 1: Project Initiation",
+                        "content": "<p>Project initiation is the first phase in the project management life cycle where the project's feasibility and objectives are defined...</p>"
+                    },
+                    {
+                        "title": "Lesson 2: Scope Management",
+                        "content": "<p>Scope management involves defining and controlling what is included and excluded in a project...</p>"
+                    }
+                ],
+                "quiz": {
+                    "title": "Quiz 1: Project Planning",
+                    "questions": [
+                        {
+                            "text": "What is scope management?",
+                            "type": "Multiple Choice",
+                            "options": [
+                                "Defining and controlling what is included and excluded in a project",
+                                "Assigning tasks to team members",
+                                "Calculating project costs",
+                                "None of the above"
+                            ],
+                            "correctAnswer": "Defining and controlling what is included and excluded in a project"
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Module 2: Project Execution and Monitoring",
+                "lessons": [
+                    {
+                        "title": "Lesson 1: Project Execution",
+                        "content": "<p>Project execution is the phase where project activities are performed, monitored, and controlled...</p>"
+                    },
+                    {
+                        "title": "Lesson 2: Risk Management",
+                        "content": "<p>Risk management in project management involves identifying, analyzing, and responding to project risks...</p>"
+                    }
+                ],
+                "quiz": {
+                    "title": "Quiz 2: Project Execution",
+                    "questions": [
+                        {
+                            "text": "What is risk management in project management?",
+                            "type": "Multiple Choice",
+                            "options": [
+                                "Identifying, analyzing, and responding to project risks",
+                                "Avoiding project deadlines",
+                                "Managing project resources",
+                                "None of the above"
+                            ],
+                            "correctAnswer": "Identifying, analyzing, and responding to project risks"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "title": "Digital Marketing Strategies",
+        "description": "Explore effective digital marketing techniques and strategies.",
+        "category": "Digital Marketing",
+        "difficultyLevel": "Intermediate",
+        "modules": [
+            {
+                "title": "Module 1: Digital Marketing Fundamentals",
+                "lessons": [
+                    {
+                        "title": "Lesson 1: Introduction to Digital Marketing",
+                        "content": "<p>Digital marketing encompasses all marketing efforts that use an electronic device or the internet...</p>"
+                    },
+                    {
+                        "title": "Lesson 2: SEO (Search Engine Optimization)",
+                        "content": "<p>SEO is the process of optimizing a website to rank higher in search engine results pages...</p>"
+                    }
+                ],
+                "quiz": {
+                    "title": "Quiz 1: Digital Marketing Basics",
+                    "questions": [
+                        {
+                            "text": "What is SEO?",
+                            "type": "Multiple Choice",
+                            "options": [
+                                "Optimizing a website to rank higher in search engine results",
+                                "Creating social media profiles",
+                                "Designing logos",
+                                "None of the above"
+                            ],
+                            "correctAnswer": "Optimizing a website to rank higher in search engine results"
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Module 2: Social Media Marketing",
+                "lessons": [
+                    {
+                        "title": "Lesson 1: Social Media Platforms",
+                        "content": "<p>Social media platforms are web-based technologies that enable people to create, share, or exchange information, ideas, and pictures/videos in virtual communities...</p>"
+                    },
+                    {
+                        "title": "Lesson 2: Content Strategy",
+                        "content": "<p>Content strategy refers to the planning, development, and management of content—written or in other media...</p>"
+                    }
+                ],
+                "quiz": {
+                    "title": "Quiz 2: Social Media Marketing",
+                    "questions": [
+                        {
+                            "text": "What is content strategy?",
+                            "type": "Multiple Choice",
+                            "options": [
+                                "Planning, development, and management of content",
+                                "Posting random content on social media",
+                                "Analyzing social media metrics",
+                                "None of the above"
+                            ],
+                            "correctAnswer": "Planning, development, and management of content"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "title": "UI/UX Design Principles",
+        "description": "Learn the principles of user interface and user experience design.",
+        "category": "UI/UX Design",
+        "difficultyLevel": "Intermediate",
+        "modules": [
+            {
+                "title": "Module 1: UI Design",
+                "lessons": [
+                    {
+                        "title": "Lesson 1: Interface Elements",
+                        "content": "<p>Interface elements are the building blocks of any software application or website...</p>"
+                    },
+                    {
+                        "title": "Lesson 2: Responsive Design",
+                        "content": "<p>Responsive design is an approach to web design that makes web pages render well on a variety of devices and window or screen sizes...</p>"
+                    }
+                ],
+                "quiz": {
+                    "title": "Quiz 1: UI Design",
+                    "questions": [
+                        {
+                            "text": "What is responsive design?",
+                            "type": "Multiple Choice",
+                            "options": [
+                                "An approach to web design for multiple devices",
+                                "A type of programming language",
+                                "A graphic design technique",
+                                "None of the above"
+                            ],
+                            "correctAnswer": "An approach to web design for multiple devices"
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Module 2: UX Design",
+                "lessons": [
+                    {
+                        "title": "Lesson 1: User Research",
+                        "content": "<p>User research involves understanding user behaviors, needs, and motivations through observation techniques, task analysis, and other feedback methodologies...</p>"
+                    },
+                    {
+                        "title": "Lesson 2: Usability Testing",
+                        "content": "<p>Usability testing is a technique used to evaluate a product by testing it on users...</p>"
+                    }
+                ],
+                "quiz": {
+                    "title": "Quiz 2: UX Design",
+                    "questions": [
+                        {
+                            "text": "What is usability testing?",
+                            "type": "Multiple Choice",
+                            "options": [
+                                "Evaluating a product by testing it on users",
+                                "Designing user interfaces",
+                                "Writing code",
+                                "None of the above"
+                            ],
+                            "correctAnswer": "Evaluating a product by testing it on users"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "title": "Game Development with Unity",
+        "description": "Build interactive games using the Unity game engine.",
+        "category": "Game Development",
+        "difficultyLevel": "Intermediate",
+        "modules": [
+            {
+                "title": "Module 1: Getting Started with Unity",
+                "lessons": [
+                    {
+                        "title": "Lesson 1: Introduction to Unity",
+                        "content": "<p>Unity is a cross-platform game engine developed by Unity Technologies...</p>"
+                    },
+                    {
+                        "title": "Lesson 2: Unity Interface and Basics",
+                        "content": "<p>The Unity interface provides tools for designing and developing games, including a scene view, game view, hierarchy window, and inspector window...</p>"
+                    }
+                ],
+                "quiz": {
+                    "title": "Quiz 1: Unity Basics",
+                    "questions": [
+                        {
+                            "text": "What is Unity?",
+                            "type": "Multiple Choice",
+                            "options": [
+                                "A cross-platform game engine",
+                                "A programming language",
+                                "A virtual reality platform",
+                                "None of the above"
+                            ],
+                            "correctAnswer": "A cross-platform game engine"
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Module 2: Game Mechanics and Physics",
+                "lessons": [
+                    {
+                        "title": "Lesson 1: Game Mechanics",
+                        "content": "<p>Game mechanics are the rules or methods designed for interaction in a game...</p>"
+                    },
+                    {
+                        "title": "Lesson 2: Physics in Unity",
+                        "content": "<p>Unity uses a physics engine to simulate the physical interactions between game objects, including collisions, gravity, and forces...</p>"
+                    }
+                ],
+                "quiz": {
+                    "title": "Quiz 2: Unity Game Development",
+                    "questions": [
+                        {
+                            "text": "What does Unity use to simulate physical interactions between game objects?",
+                            "type": "Multiple Choice",
+                            "options": [
+                                "A physics engine",
+                                "A scripting language",
+                                "A game design tool",
+                                "None of the above"
+                            ],
+                            "correctAnswer": "A physics engine"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+]
