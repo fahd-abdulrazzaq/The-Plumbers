@@ -42,7 +42,7 @@ const Dashboard = () => {
   }, [user]);
 
   return (
-    <div className='section-container bg-gradient-to-r from-[#FAFAFA] from-0% to-[#FCFCFC] to-100%'>
+    <div className='container bg-gradient-to-r from-[#FAFAFA] from-0% to-[#FCFCFC] to-100%'>
       <div className='py-24 max-w-6xl mx-auto'>
         <div className='mb-8'>
           <h1 className='text-4xl text-blue font-bold'>
@@ -54,7 +54,7 @@ const Dashboard = () => {
           </p>
 
           <ToggLable buttonLabel='View profile'>
-            <div className='flex flex-col items-center shadow-md text-blue md:text-xl w-[80%] lg:w-[50%] mx-auto'>
+            <div className='flex flex-col items-center shadow-md text-blue md:text-xl w-full lg:w-[50%] mx-auto'>
               <div className='w-24 h-24 mb-10'>
                 <img
                   src={user?.profileImage}
@@ -62,7 +62,7 @@ const Dashboard = () => {
                   className='bg-cover rounded-full w-[100%] h-[100%]'
                 />
               </div>
-              <div className='text-left'>
+              <div className='text-left p-3'>
                 <p className='my-1'>First Name: {user?.firstName}</p>
                 <hr />
                 <p className='my-1'>Last Name: {user?.lastName}</p>
@@ -106,12 +106,13 @@ const Dashboard = () => {
                   </p>
                   <ProgressBar progress={course.progress} />*/}
                   </div>
-                  <a href={`/courses/${course.id}`}
-                    className='btn bg-blue text-white end rounded-md'>
+                  <a
+                    href={`/courses/${course.id}`}
+                    className='btn bg-blue text-white end rounded-md'
+                  >
                     Go to Course Page
                   </a>
                 </div>
-
               ))}
             </div>
           )}

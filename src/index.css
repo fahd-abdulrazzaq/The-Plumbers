@@ -5,21 +5,21 @@
 @tailwind utilities;
 
 body {
-    font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 header {
-    z-index: 1001 !important;
+  z-index: 1001 !important;
 }
 
-.section-container{
-    @apply max-w-screen-2xl container mx-auto xl:px-24 px-4;
+.section-container {
+  @apply max-w-screen-2xl container mx-auto xl:px-24 px-4;
 }
 
 .title {
-    @apply text-4xl md:text-5xl font-bold my-2 leading-snug md:leading-snug
+  @apply text-4xl md:text-5xl font-bold my-2 leading-snug md:leading-snug;
 }
 
 .subtitle {
-    @apply text-blue uppercase tracking-wide font-medium text-lg
+  @apply text-blue uppercase tracking-wide font-medium text-lg;
 }

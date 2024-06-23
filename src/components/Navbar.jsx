@@ -67,14 +67,14 @@ export default function Navbar() {
   };
 
   return (
-    <header className='max-w-screen-2xl container just mx-auto fixed top-0 left-0 right-0'>
-      <div
-        className={`navbar xl:px-24 ${
-          sticky
-            ? 'shadow bg-base-100 transition-all ease-in-out duration-300'
-            : ''
-        }`}
-      >
+    <header
+      className={`fixed top-0 w-full z-50 ${
+        sticky
+          ? 'shadow bg-base-100 transition-all ease-in-out duration-300'
+          : ''
+      }`}
+    >
+      <div className={`navbar container`}>
         <div className='navbar-start align-middle'>
           <div className='dropdown'>
             <div tabIndex={0} role='button' className='btn btn-ghost lg:hidden'>

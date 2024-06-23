@@ -18,11 +18,11 @@ export default function App() {
     });
   }, []);
   return (
-    <div>
+    <main className='bg-gradient-to-r from-[#FAFAFA] from-0% to-[#FCFCFC] to-100% pt-20'>
       <Navbar />
       <Outlet />
       <Footer />
       <ToastContainer />
-    </div>
+    </main>
   );
 }
